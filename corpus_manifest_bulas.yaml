@@ -1,0 +1,2016 @@
+scenario_id: bulas-medicamentos-anvisa
+version: '2026-10-07'
+description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da ANVISA
+bases:
+- base_id: bulas_anvisa
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    diretorio: BULAS_dir
+  selecao_deterministica: true
+  volume_alvo: todos os PDFs de bula disponíveis localmente
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  metadados_extras:
+  - medicamento
+  - principio_ativo
+  - nome_produto
+  - tipo_bula
+  - numero_registro
+  - id_produto
+  - expediente
+  - razao_social
+  - cnpj
+  - numero_transacao
+  - data_documento
+  - numero_processo
+  - data_atualizacao
+generated_by: src.gerar_corpus_manifest_bulas
+generated_at: '2026-10-07T14:52:35Z'
+medicamentos_disponiveis:
+- advil
+- aerolin
+- amoxil
+- amytril
+- aspirina
+- budesonida
+- captosen
+- clorana
+- cloridrato_de_metformina
+- corus
+- cozaar
+- dolutegravir_sodico
+- entecavir
+- fumarato_de_tenofovir_desoproxila
+- glifage
+- glifage_xr
+- hidroclorotiazida
+- humulin_n
+- losartana_potassica
+- maleato_de_enalapril
+- metotrexato
+- novalgina
+- novocilin
+- pratiprazol
+- puran_t4
+- renitec
+- sinvastacor
+- sinvastatina
+- sofosbuvir
+- sulfato_de_salbutamol
+- tylenol
+total_medicamentos: 31
+total_documentos: 59
+documentos:
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/advil/192900005_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: advil
+  principio_ativo: ibuprofeno
+  nome_produto: ADVIL
+  tipo_bula: profissional
+  numero_registro: '192900005'
+  id_produto: 3576508
+  expediente: '1609395255'
+  razao_social: PF Consumer Healthcare Brazil Importadora e Distribuidora de Medicamentos
+    Ltda
+  cnpj: '30872270000153'
+  numero_transacao: '18158942025'
+  data_documento: 2025-12-16T15:53:14.000-0200
+  numero_processo: '25351400358202201'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/advil/192900005_profissional.pdf
+  sha256: e628a24723480d114c6d552892baf38dd4dcdc58de5ceee6f6c4f62c2764668a
+  tamanho_bytes: 467095
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/aerolin/101070226_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: aerolin
+  principio_ativo: sulfato_de_salbutamol
+  nome_produto: AEROLIN
+  tipo_bula: paciente
+  numero_registro: '101070226'
+  id_produto: 374837
+  expediente: '1144316251'
+  razao_social: GLAXOSMITHKLINE BRASIL LTDA
+  cnpj: '33247743000110'
+  numero_transacao: '12157522025'
+  data_documento: 2025-08-26T14:05:19.000-0300
+  numero_processo: '25351108915200445'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/aerolin/101070226_paciente.pdf
+  sha256: d76431099262234a3b896db92c491a93f8d66544ad896e494099073716dc4965
+  tamanho_bytes: 907060
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/aerolin/101070226_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: aerolin
+  principio_ativo: sulfato_de_salbutamol
+  nome_produto: AEROLIN
+  tipo_bula: profissional
+  numero_registro: '101070226'
+  id_produto: 374837
+  expediente: '1144316251'
+  razao_social: GLAXOSMITHKLINE BRASIL LTDA
+  cnpj: '33247743000110'
+  numero_transacao: '12157522025'
+  data_documento: 2025-08-26T14:05:19.000-0300
+  numero_processo: '25351108915200445'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/aerolin/101070226_profissional.pdf
+  sha256: 653064ec0a58abf82da19b02193ebc7a1c25bd0a78f624762829a0ff577eab2a
+  tamanho_bytes: 996370
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/amoxil/101070003_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: amoxil
+  principio_ativo: amoxicilina
+  nome_produto: AMOXIL
+  tipo_bula: paciente
+  numero_registro: '101070003'
+  id_produto: 369873
+  expediente: '1467037257'
+  razao_social: GLAXOSMITHKLINE BRASIL LTDA
+  cnpj: '33247743000110'
+  numero_transacao: '16143772025'
+  data_documento: 2025-11-06T07:09:22.000-0200
+  numero_processo: '2599202214972'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/amoxil/101070003_paciente.pdf
+  sha256: c79815cbdb393617be76a61ff2bf1a9403695829251a466b785e5329af7f8695
+  tamanho_bytes: 931841
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/amoxil/101070003_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: amoxil
+  principio_ativo: amoxicilina
+  nome_produto: AMOXIL
+  tipo_bula: profissional
+  numero_registro: '101070003'
+  id_produto: 369873
+  expediente: '1467037257'
+  razao_social: GLAXOSMITHKLINE BRASIL LTDA
+  cnpj: '33247743000110'
+  numero_transacao: '16143772025'
+  data_documento: 2025-11-06T07:09:22.000-0200
+  numero_processo: '2599202214972'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/amoxil/101070003_profissional.pdf
+  sha256: ba1962f29ac4f57595fb8ce0af3f5259f39d037f7a74f7b5ab22bb8c9653d154
+  tamanho_bytes: 876365
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/amytril_102980225/102980225_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: amytril
+  principio_ativo: cloridrato_de_amitriptilina
+  nome_produto: AMYTRIL
+  tipo_bula: paciente
+  numero_registro: '102980225'
+  id_produto: 2343
+  expediente: 0540709263
+  razao_social: CRISTÁLIA PRODUTOS QUÍMICOS FARMACÊUTICOS LTDA.
+  cnpj: '44734671000151'
+  numero_transacao: '7308642026'
+  data_documento: 2026-06-02T16:23:42.000-0300
+  numero_processo: '250000154709769'
+  data_atualizacao: 2026-09-25T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/amytril_102980225/102980225_paciente.pdf
+  sha256: edda97a2258269eee0a019830026a3f6aa149a7239a7a4065569a115a60298e2
+  tamanho_bytes: 694199
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/amytril_102980364/102980364_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: amytril
+  principio_ativo: cloridrato_de_amitriptilina
+  nome_produto: AMYTRIL
+  tipo_bula: paciente
+  numero_registro: '102980364'
+  id_produto: 532593
+  expediente: 0540830267
+  razao_social: CRISTÁLIA PRODUTOS QUÍMICOS FARMACÊUTICOS LTDA.
+  cnpj: '44734671000151'
+  numero_transacao: '7312252026'
+  data_documento: 2026-06-02T17:00:45.000-0300
+  numero_processo: '25351126499200718'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/amytril_102980364/102980364_paciente.pdf
+  sha256: ba7c6ac1383bd812167869735cc4f07acd43e91709682c0e8aef95255950a1cd
+  tamanho_bytes: 434594
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/amytril_102980225/102980225_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: amytril
+  principio_ativo: cloridrato_de_amitriptilina
+  nome_produto: AMYTRIL
+  tipo_bula: profissional
+  numero_registro: '102980225'
+  id_produto: 2343
+  expediente: 0540709263
+  razao_social: CRISTÁLIA PRODUTOS QUÍMICOS FARMACÊUTICOS LTDA.
+  cnpj: '44734671000151'
+  numero_transacao: '7308642026'
+  data_documento: 2026-06-02T16:23:42.000-0300
+  numero_processo: '250000154709769'
+  data_atualizacao: 2026-09-25T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/amytril_102980225/102980225_profissional.pdf
+  sha256: 21ff04445304da08e72dc44b9b98d85e907fec7e932b01dca5117b9117229762
+  tamanho_bytes: 713926
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/aspirina/170560020_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: aspirina
+  principio_ativo: acido_acetilsalicilico
+  nome_produto: ASPIRINA
+  tipo_bula: paciente
+  numero_registro: '170560020'
+  id_produto: 544209
+  expediente: 0976029260
+  razao_social: BAYER S.A.
+  cnpj: '18459628000115'
+  numero_transacao: '12645022026'
+  data_documento: 2026-09-18T14:49:35.000-0300
+  numero_processo: '25351210118200770'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/aspirina/170560020_paciente.pdf
+  sha256: 184a5b77d4f4998f298e2ea363cb730bf502ac2bbb0ffab091f03d02ebb81179
+  tamanho_bytes: 675875
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/aspirina/170560020_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: aspirina
+  principio_ativo: acido_acetilsalicilico
+  nome_produto: ASPIRINA
+  tipo_bula: profissional
+  numero_registro: '170560020'
+  id_produto: 544209
+  expediente: 0976029260
+  razao_social: BAYER S.A.
+  cnpj: '18459628000115'
+  numero_transacao: '12645022026'
+  data_documento: 2026-09-18T14:49:35.000-0300
+  numero_processo: '25351210118200770'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/aspirina/170560020_profissional.pdf
+  sha256: d8ebfd281899934afe8fb7bc1ac3fe85e4ac9b26a1c70d960ca0a8075d8013b5
+  tamanho_bytes: 747619
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/budesonida/105730092_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: budesonida
+  principio_ativo: budesonida
+  nome_produto: budesonida
+  tipo_bula: paciente
+  numero_registro: '105730092'
+  id_produto: 3752303
+  expediente: 0248487264
+  razao_social: ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A
+  cnpj: '60659463002992'
+  numero_transacao: '3440602026'
+  data_documento: 2026-03-13T11:45:23.000-0300
+  numero_processo: '25351385639202481'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/budesonida/105730092_paciente.pdf
+  sha256: 42fa5641e16e82dc18f27324688c7de6ffd15bc33b983c81a35711503192f085
+  tamanho_bytes: 447618
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/budesonida/105730092_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: budesonida
+  principio_ativo: budesonida
+  nome_produto: budesonida
+  tipo_bula: profissional
+  numero_registro: '105730092'
+  id_produto: 3752303
+  expediente: 0248487264
+  razao_social: ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A
+  cnpj: '60659463002992'
+  numero_transacao: '3440602026'
+  data_documento: 2026-03-13T11:45:23.000-0300
+  numero_processo: '25351385639202481'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/budesonida/105730092_profissional.pdf
+  sha256: a125895cb9f7c63262f4e8a367f8144dfd5a4c33819310a285cc1be2a04ea2ee
+  tamanho_bytes: 514838
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/captosen/141070025_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: captosen
+  principio_ativo: captopril
+  nome_produto: CAPTOSEN
+  tipo_bula: paciente
+  numero_registro: '141070025'
+  id_produto: 70044
+  expediente: '4723114220'
+  razao_social: PHARLAB INDÚSTRIA FARMACÊUTICA S.A.
+  cnpj: 02501297000102
+  numero_transacao: '8892802022'
+  data_documento: 2026-03-11T13:03:25.000-0300
+  numero_processo: '250000236649972'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/captosen/141070025_paciente.pdf
+  sha256: a2ad7e3e48770afdae598a4b3b723b6680960e9cd99d2cbd2d7152defcc717c4
+  tamanho_bytes: 359238
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/captosen/141070025_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: captosen
+  principio_ativo: captopril
+  nome_produto: CAPTOSEN
+  tipo_bula: profissional
+  numero_registro: '141070025'
+  id_produto: 70044
+  expediente: '4723114220'
+  razao_social: PHARLAB INDÚSTRIA FARMACÊUTICA S.A.
+  cnpj: 02501297000102
+  numero_transacao: '8892802022'
+  data_documento: 2026-03-11T13:03:25.000-0300
+  numero_processo: '250000236649972'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/captosen/141070025_profissional.pdf
+  sha256: f5c0a5fdcc3a47adcc622bbb081e2dc26cbb2e0ec48adbd55025a0a744d44805
+  tamanho_bytes: 283131
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/clorana/183260436_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: clorana
+  principio_ativo: hidroclorotiazida
+  nome_produto: CLORANA
+  tipo_bula: paciente
+  numero_registro: '183260436'
+  id_produto: 1386136
+  expediente: '1657254241'
+  razao_social: SANOFI MEDLEY FARMACÊUTICA LTDA.
+  cnpj: '10588595001092'
+  numero_transacao: '13407382024'
+  data_documento: 2024-12-04T11:07:50.000-0200
+  numero_processo: '25351627525201956'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/clorana/183260436_paciente.pdf
+  sha256: dfaa66b9721831e78d16585bce6dc104cc93cc20a384405a6d5eac2f9f08b7d4
+  tamanho_bytes: 574608
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/clorana/183260436_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: clorana
+  principio_ativo: hidroclorotiazida
+  nome_produto: CLORANA
+  tipo_bula: profissional
+  numero_registro: '183260436'
+  id_produto: 1386136
+  expediente: '1657254241'
+  razao_social: SANOFI MEDLEY FARMACÊUTICA LTDA.
+  cnpj: '10588595001092'
+  numero_transacao: '13407382024'
+  data_documento: 2024-12-04T11:07:50.000-0200
+  numero_processo: '25351627525201956'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/clorana/183260436_profissional.pdf
+  sha256: 481982d22a8523f935766a803924ee1f5cf6235c91965f98644634691b0b6c53
+  tamanho_bytes: 545167
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/cloridrato_de_metformina/154230270_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: cloridrato_de_metformina
+  principio_ativo: cloridrato_de_metformina
+  nome_produto: cloridrato de metformina
+  tipo_bula: profissional
+  numero_registro: '154230270'
+  id_produto: 774058
+  expediente: 0584169264
+  razao_social: GEOLAB INDÚSTRIA FARMACÊUTICA S/A
+  cnpj: 03485572000104
+  numero_transacao: '7837502026'
+  data_documento: 2026-06-15T10:14:25.000-0300
+  numero_processo: '25351474305201105'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/cloridrato_de_metformina/154230270_profissional.pdf
+  sha256: 078ebe1718e49e69ec456424e32911b8d48d888658a05194aa1d90e8dd3d386e
+  tamanho_bytes: 637942
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/corus/105730793_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: corus
+  principio_ativo: losartana_potassica
+  nome_produto: CORUS
+  tipo_bula: paciente
+  numero_registro: '105730793'
+  id_produto: 2937098
+  expediente: 0619928263
+  razao_social: ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A
+  cnpj: '60659463002992'
+  numero_transacao: '8316342026'
+  data_documento: 2026-06-24T06:34:07.000-0300
+  numero_processo: '25351070769201587'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/corus/105730793_paciente.pdf
+  sha256: 4dc4ed695162cc0b61b482197ac74b9735c92686a28283d7724ab8456cb36531
+  tamanho_bytes: 434001
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/corus/105730793_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: corus
+  principio_ativo: losartana_potassica
+  nome_produto: CORUS
+  tipo_bula: profissional
+  numero_registro: '105730793'
+  id_produto: 2937098
+  expediente: 0619928263
+  razao_social: ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A
+  cnpj: '60659463002992'
+  numero_transacao: '8316342026'
+  data_documento: 2026-06-24T06:34:07.000-0300
+  numero_processo: '25351070769201587'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/corus/105730793_profissional.pdf
+  sha256: 538a882c215203a123667b8b6b4db442a204933c589f85c43a8fcb29360edbb5
+  tamanho_bytes: 750739
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/cozaar/100290007_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: cozaar
+  principio_ativo: losartana_potassica
+  nome_produto: COZAAR
+  tipo_bula: paciente
+  numero_registro: '100290007'
+  id_produto: 336699
+  expediente: '1454152257'
+  razao_social: ORGANON FARMACÊUTICA LTDA.
+  cnpj: '45987013000134'
+  numero_transacao: '15987262025'
+  data_documento: 2025-11-03T16:59:21.000-0200
+  numero_processo: '250000052239411'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/cozaar/100290007_paciente.pdf
+  sha256: 5ea7a8570fb96bacbe3455279aef9a1992d732eaebe13d78395d1427a6d1162e
+  tamanho_bytes: 451124
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/cozaar/100290007_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: cozaar
+  principio_ativo: losartana_potassica
+  nome_produto: COZAAR
+  tipo_bula: profissional
+  numero_registro: '100290007'
+  id_produto: 336699
+  expediente: '1454152257'
+  razao_social: ORGANON FARMACÊUTICA LTDA.
+  cnpj: '45987013000134'
+  numero_transacao: '15987262025'
+  data_documento: 2025-11-03T16:59:21.000-0200
+  numero_processo: '250000052239411'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/cozaar/100290007_profissional.pdf
+  sha256: cb4d2895b334732a5d3b35428c4da1ffd1c0f627bab62475c8cddf76bd480d91
+  tamanho_bytes: 481250
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/dolutegravir_sódico/110630153_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: dolutegravir_sodico
+  principio_ativo: dolutegravir_sodico
+  nome_produto: dolutegravir sódico
+  tipo_bula: paciente
+  numero_registro: '110630153'
+  id_produto: 1512100
+  expediente: '0642034265'
+  razao_social: FUNDAÇÃO OSWALDO CRUZ
+  cnpj: '33781055000135'
+  numero_transacao: '8589652026'
+  data_documento: 2026-06-30T12:01:02.000-0300
+  numero_processo: '25351693841202050'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/dolutegravir_sódico/110630153_paciente.pdf
+  sha256: 3293bef56efd906e85dc186a02441217d9efc9327bf69c4ed21a93c935726c16
+  tamanho_bytes: 397470
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/dolutegravir_sódico/110630153_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: dolutegravir_sodico
+  principio_ativo: dolutegravir_sodico
+  nome_produto: dolutegravir sódico
+  tipo_bula: profissional
+  numero_registro: '110630153'
+  id_produto: 1512100
+  expediente: '0642034265'
+  razao_social: FUNDAÇÃO OSWALDO CRUZ
+  cnpj: '33781055000135'
+  numero_transacao: '8589652026'
+  data_documento: 2026-06-30T12:01:02.000-0300
+  numero_processo: '25351693841202050'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/dolutegravir_sódico/110630153_profissional.pdf
+  sha256: d512f90325e08d24d772f173361beb8c37bf57a0854787cf4603ae351d0243dc
+  tamanho_bytes: 647009
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/entecavir/112090141_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: entecavir
+  principio_ativo: entecavir
+  nome_produto: entecavir
+  tipo_bula: paciente
+  numero_registro: '112090141'
+  id_produto: 1216020
+  expediente: '1563830248'
+  razao_social: FUNDAÇÃO EZEQUIEL DIAS - FUNED
+  cnpj: '17503475000101'
+  numero_transacao: '12569922024'
+  data_documento: 2024-11-13T14:40:12.000-0200
+  numero_processo: '25351624898201711'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/entecavir/112090141_paciente.pdf
+  sha256: 624b7445f13cbf13fe5cf3ab472c528714ca3494dd68ca3e3df693f046cb64bc
+  tamanho_bytes: 753884
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/entecavir/112090141_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: entecavir
+  principio_ativo: entecavir
+  nome_produto: entecavir
+  tipo_bula: profissional
+  numero_registro: '112090141'
+  id_produto: 1216020
+  expediente: '1563830248'
+  razao_social: FUNDAÇÃO EZEQUIEL DIAS - FUNED
+  cnpj: '17503475000101'
+  numero_transacao: '12569922024'
+  data_documento: 2024-11-13T14:40:12.000-0200
+  numero_processo: '25351624898201711'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/entecavir/112090141_profissional.pdf
+  sha256: 9469bd666440f62c965275a3fc93ca653263148dd246304a175a47c4e5725819
+  tamanho_bytes: 738925
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/fumarato_de_tenofovir_desoproxila/112090136_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: fumarato_de_tenofovir_desoproxila
+  principio_ativo: fumarato_de_tenofovir_desoproxila
+  nome_produto: FUMARATO DE TENOFOVIR DESOPROXILA
+  tipo_bula: paciente
+  numero_registro: '112090136'
+  id_produto: 702723
+  expediente: '2303261228'
+  razao_social: FUNDAÇÃO EZEQUIEL DIAS - FUNED
+  cnpj: '17503475000101'
+  numero_transacao: '3346952022'
+  data_documento: 2022-04-12T12:17:53.000-0300
+  numero_processo: '25351405247201019'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/fumarato_de_tenofovir_desoproxila/112090136_paciente.pdf
+  sha256: 24e898b2a2807415b47d32bb9abf79b182f19823580aab0ff7e82e623f3f7044
+  tamanho_bytes: 181548
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/fumarato_de_tenofovir_desoproxila/112090136_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: fumarato_de_tenofovir_desoproxila
+  principio_ativo: fumarato_de_tenofovir_desoproxila
+  nome_produto: FUMARATO DE TENOFOVIR DESOPROXILA
+  tipo_bula: profissional
+  numero_registro: '112090136'
+  id_produto: 702723
+  expediente: '2303261228'
+  razao_social: FUNDAÇÃO EZEQUIEL DIAS - FUNED
+  cnpj: '17503475000101'
+  numero_transacao: '3346952022'
+  data_documento: 2022-04-12T12:17:53.000-0300
+  numero_processo: '25351405247201019'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/fumarato_de_tenofovir_desoproxila/112090136_profissional.pdf
+  sha256: 88e0e11e9c9f0c0772fb99fdd33775bf357f4e9daba10f2392bb1824fab82e5d
+  tamanho_bytes: 1252901
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/glifage/100890193_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: glifage
+  principio_ativo: cloridrato_de_metformina
+  nome_produto: GLIFAGE
+  tipo_bula: paciente
+  numero_registro: '100890193'
+  id_produto: 349899
+  expediente: 0953744264
+  razao_social: MERCK S/A
+  cnpj: '33069212000184'
+  numero_transacao: '12368492026'
+  data_documento: 2026-09-14T15:57:03.000-0300
+  numero_processo: '250000121599352'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/glifage/100890193_paciente.pdf
+  sha256: 7d8052c702a5d87fe9b09c8d136154cc568dc09b8971fe9d1de8d3352d4dc3b1
+  tamanho_bytes: 410585
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/glifage/100890193_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: glifage
+  principio_ativo: cloridrato_de_metformina
+  nome_produto: GLIFAGE
+  tipo_bula: profissional
+  numero_registro: '100890193'
+  id_produto: 349899
+  expediente: 0953744264
+  razao_social: MERCK S/A
+  cnpj: '33069212000184'
+  numero_transacao: '12368492026'
+  data_documento: 2026-09-14T15:57:03.000-0300
+  numero_processo: '250000121599352'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/glifage/100890193_profissional.pdf
+  sha256: 8cf14752aec1959535bc03e98174f6e1af8b1ab07dc7d0797f6188de0369a0c6
+  tamanho_bytes: 460050
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/glifage_xr/100890340_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: glifage_xr
+  principio_ativo: cloridrato_de_metformina
+  nome_produto: GLIFAGE XR
+  tipo_bula: paciente
+  numero_registro: '100890340'
+  id_produto: 475046
+  expediente: 0953618269
+  razao_social: MERCK S/A
+  cnpj: '33069212000184'
+  numero_transacao: '12366362026'
+  data_documento: 2026-09-14T15:38:52.000-0300
+  numero_processo: '25351284809200629'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/glifage_xr/100890340_paciente.pdf
+  sha256: cea182738986b06104deaad0978d03838803e1f3c11a6396e170c84103b8d32a
+  tamanho_bytes: 540145
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/glifage_xr/100890340_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: glifage_xr
+  principio_ativo: cloridrato_de_metformina
+  nome_produto: GLIFAGE XR
+  tipo_bula: profissional
+  numero_registro: '100890340'
+  id_produto: 475046
+  expediente: 0953618269
+  razao_social: MERCK S/A
+  cnpj: '33069212000184'
+  numero_transacao: '12366362026'
+  data_documento: 2026-09-14T15:38:52.000-0300
+  numero_processo: '25351284809200629'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/glifage_xr/100890340_profissional.pdf
+  sha256: c5d4f346a4092b7c3e7c6e9ee8537c5788c8f93e2f4cedac4a2753a99ca10ff9
+  tamanho_bytes: 581481
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/hidroclorotiazida/143810210_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: hidroclorotiazida
+  principio_ativo: hidroclorotiazida
+  nome_produto: hidroclorotiazida
+  tipo_bula: paciente
+  numero_registro: '143810210'
+  id_produto: 1248638
+  expediente: 0596564261
+  razao_social: CIMED INDUSTRIA S.A
+  cnpj: 02814497000107
+  numero_transacao: '8001852026'
+  data_documento: 2026-06-17T15:31:08.000-0300
+  numero_processo: '25351066727201838'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/hidroclorotiazida/143810210_paciente.pdf
+  sha256: c0c391292998b88ee134f4469bca6a439b627dc01a63236befeb6bed5494d71a
+  tamanho_bytes: 276699
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/hidroclorotiazida/143810210_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: hidroclorotiazida
+  principio_ativo: hidroclorotiazida
+  nome_produto: hidroclorotiazida
+  tipo_bula: profissional
+  numero_registro: '143810210'
+  id_produto: 1248638
+  expediente: 0596564261
+  razao_social: CIMED INDUSTRIA S.A
+  cnpj: 02814497000107
+  numero_transacao: '8001852026'
+  data_documento: 2026-06-17T15:31:08.000-0300
+  numero_processo: '25351066727201838'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/hidroclorotiazida/143810210_profissional.pdf
+  sha256: 7d09a6c570535ec4ca5cd69a3caa99fa93fd08046b6c418364b2874c2b83d2f2
+  tamanho_bytes: 303537
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/humulin_n/112600057_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: humulin_n
+  principio_ativo: insulina_humana_isofana
+  nome_produto: HUMULIN N
+  tipo_bula: paciente
+  numero_registro: '112600057'
+  id_produto: 4984
+  expediente: '1495692256'
+  razao_social: ELI LILLY DO BRASIL LTDA
+  cnpj: '43940618000144'
+  numero_transacao: '16561232025'
+  data_documento: 2025-11-13T16:43:56.000-0200
+  numero_processo: '2500101763885'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/humulin_n/112600057_paciente.pdf
+  sha256: 726e4ada2ed9660438d7227e5b0946504f45daaf3ab485a7607f661cc471a10f
+  tamanho_bytes: 950635
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/humulin_n/112600057_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: humulin_n
+  principio_ativo: insulina_humana_isofana
+  nome_produto: HUMULIN N
+  tipo_bula: profissional
+  numero_registro: '112600057'
+  id_produto: 4984
+  expediente: '1495692256'
+  razao_social: ELI LILLY DO BRASIL LTDA
+  cnpj: '43940618000144'
+  numero_transacao: '16561232025'
+  data_documento: 2025-11-13T16:43:56.000-0200
+  numero_processo: '2500101763885'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/humulin_n/112600057_profissional.pdf
+  sha256: 423d64540c3fff738ec5e06e290f5da93691cd50c192dfec548ecf35b155822c
+  tamanho_bytes: 943433
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/losartana_potássica/105730534_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: losartana_potassica
+  principio_ativo: losartana_potassica
+  nome_produto: LOSARTANA POTÁSSICA
+  tipo_bula: paciente
+  numero_registro: '105730534'
+  id_produto: 1285724
+  expediente: 0900110261
+  razao_social: ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A
+  cnpj: '60659463002992'
+  numero_transacao: '11726822026'
+  data_documento: 2026-08-31T17:05:29.000-0300
+  numero_processo: '25351676150201877'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/losartana_potássica/105730534_paciente.pdf
+  sha256: c90c1e25fa0738a710c32d13258d5f3761b5987b7e2393c0013d174dd0129848
+  tamanho_bytes: 365525
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/losartana_potássica/105730534_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: losartana_potassica
+  principio_ativo: losartana_potassica
+  nome_produto: LOSARTANA POTÁSSICA
+  tipo_bula: profissional
+  numero_registro: '105730534'
+  id_produto: 1285724
+  expediente: 0900110261
+  razao_social: ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A
+  cnpj: '60659463002992'
+  numero_transacao: '11726822026'
+  data_documento: 2026-08-31T17:05:29.000-0300
+  numero_processo: '25351676150201877'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/losartana_potássica/105730534_profissional.pdf
+  sha256: 123a5d484c297c7bf257090432b3331feef539d92cd45ed34e48eb6444d83385
+  tamanho_bytes: 687448
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/maleato_de_enalapril/105350201_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: maleato_de_enalapril
+  principio_ativo: maleato_de_enalapril
+  nome_produto: maleato de enalapril
+  tipo_bula: paciente
+  numero_registro: '105350201'
+  id_produto: 1251489
+  expediente: '0366626264'
+  razao_social: LABORATÓRIO GLOBO SA
+  cnpj: '17115437000173'
+  numero_transacao: '5020412026'
+  data_documento: 2026-04-15T10:47:10.000-0300
+  numero_processo: '25351132256201863'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/maleato_de_enalapril/105350201_paciente.pdf
+  sha256: e380d95695f2a6203b8d1a20e1c1d6f69d4baef7efd0827b1fe5f530f4fb78e0
+  tamanho_bytes: 958677
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/maleato_de_enalapril/105350201_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: maleato_de_enalapril
+  principio_ativo: maleato_de_enalapril
+  nome_produto: maleato de enalapril
+  tipo_bula: profissional
+  numero_registro: '105350201'
+  id_produto: 1251489
+  expediente: '0366626264'
+  razao_social: LABORATÓRIO GLOBO SA
+  cnpj: '17115437000173'
+  numero_transacao: '5020412026'
+  data_documento: 2026-04-15T10:47:10.000-0300
+  numero_processo: '25351132256201863'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/maleato_de_enalapril/105350201_profissional.pdf
+  sha256: bcf8169e03d57ff0ca20ad59536489e8e656563d3b4947800f5d069f2e4cf287
+  tamanho_bytes: 1102194
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/metotrexato/116370142_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: metotrexato
+  principio_ativo: metotrexato
+  nome_produto: metotrexato
+  tipo_bula: profissional
+  numero_registro: '116370142'
+  id_produto: 1144113
+  expediente: 0247594261
+  razao_social: BLAU FARMACÊUTICA S.A.
+  cnpj: '58430828000160'
+  numero_transacao: '3420872026'
+  data_documento: 2026-03-13T09:18:41.000-0300
+  numero_processo: '25351565336201630'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/metotrexato/116370142_profissional.pdf
+  sha256: 9c8ee767767f2efed7d639f606891ccc8b8d2afde98493ff2f23e4f69727abfb
+  tamanho_bytes: 1051426
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/novalgina/186200018_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: novalgina
+  principio_ativo: dipirona_monoidratada
+  nome_produto: NOVALGINA
+  tipo_bula: paciente
+  numero_registro: '186200018'
+  id_produto: 3657649
+  expediente: '0274071266'
+  razao_social: OPELLA HEALTHCARE BRAZIL LTDA
+  cnpj: '38391432000143'
+  numero_transacao: '3780672026'
+  data_documento: 2026-03-20T10:54:11.000-0300
+  numero_processo: '25351617747202347'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/novalgina/186200018_paciente.pdf
+  sha256: e947a7e67a1d0f461479ff3da953e0760c3f8df070d210f1b668e81a8b588ff6
+  tamanho_bytes: 1187280
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/novalgina/186200018_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: novalgina
+  principio_ativo: dipirona_monoidratada
+  nome_produto: NOVALGINA
+  tipo_bula: profissional
+  numero_registro: '186200018'
+  id_produto: 3657649
+  expediente: '0274071266'
+  razao_social: OPELLA HEALTHCARE BRAZIL LTDA
+  cnpj: '38391432000143'
+  numero_transacao: '3780672026'
+  data_documento: 2026-03-20T10:54:11.000-0300
+  numero_processo: '25351617747202347'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/novalgina/186200018_profissional.pdf
+  sha256: 1c77b2515c0869918cd615aee7d4569febebf4550bfc525354e2f10dc1d48fc7
+  tamanho_bytes: 1238136
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/novocilin/105730076_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: novocilin
+  principio_ativo: amoxicilina
+  nome_produto: NOVOCILIN
+  tipo_bula: paciente
+  numero_registro: '105730076'
+  id_produto: 336654
+  expediente: 0104319267
+  razao_social: ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A
+  cnpj: '60659463002992'
+  numero_transacao: '1412592026'
+  data_documento: 2026-02-02T07:59:56.000-0200
+  numero_processo: '2599201797273'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/novocilin/105730076_paciente.pdf
+  sha256: 04cf23c03d452bec43aa6a28e1eb191ab3ec7a3f272d76735f85f83a531c39bd
+  tamanho_bytes: 1229905
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/novocilin/105730076_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: novocilin
+  principio_ativo: amoxicilina
+  nome_produto: NOVOCILIN
+  tipo_bula: profissional
+  numero_registro: '105730076'
+  id_produto: 336654
+  expediente: 0104319267
+  razao_social: ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A
+  cnpj: '60659463002992'
+  numero_transacao: '1412592026'
+  data_documento: 2026-02-02T07:59:56.000-0200
+  numero_processo: '2599201797273'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/novocilin/105730076_profissional.pdf
+  sha256: 2022deb2df4beaa65f98fa58e4a387cc8018f93ca80e831b307070afe14d36d2
+  tamanho_bytes: 1194628
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/pratiprazol/125680337_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: pratiprazol
+  principio_ativo: omeprazol
+  nome_produto: PRATIPRAZOL
+  tipo_bula: paciente
+  numero_registro: '125680337'
+  id_produto: 1331335
+  expediente: '0462067262'
+  razao_social: PRATI DONADUZZI & CIA LTDA
+  cnpj: '73856593000166'
+  numero_transacao: '6283772026'
+  data_documento: 2026-05-12T18:08:42.000-0300
+  numero_processo: '25351340047201972'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/pratiprazol/125680337_paciente.pdf
+  sha256: 4214c7ff34e49729f95db23990551e8094bb43b101589ee01eb6a7d8012b17a9
+  tamanho_bytes: 177497
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/pratiprazol/125680337_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: pratiprazol
+  principio_ativo: omeprazol
+  nome_produto: PRATIPRAZOL
+  tipo_bula: profissional
+  numero_registro: '125680337'
+  id_produto: 1331335
+  expediente: '0462067262'
+  razao_social: PRATI DONADUZZI & CIA LTDA
+  cnpj: '73856593000166'
+  numero_transacao: '6283772026'
+  data_documento: 2026-05-12T18:08:42.000-0300
+  numero_processo: '25351340047201972'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/pratiprazol/125680337_profissional.pdf
+  sha256: a916870a364b198bdd3aba9f5f50953fd54cb095edef5b2c2bf75b69198d2538
+  tamanho_bytes: 334531
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/puran_t4/183260353_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: puran_t4
+  principio_ativo: levotiroxina_sodica
+  nome_produto: PURAN T4
+  tipo_bula: paciente
+  numero_registro: '183260353'
+  id_produto: 1329235
+  expediente: 0459776240
+  razao_social: SANOFI MEDLEY FARMACÊUTICA LTDA.
+  cnpj: '10588595001092'
+  numero_transacao: '3613102024'
+  data_documento: 2024-04-11T10:23:00.000-0300
+  numero_processo: '25351190236201998'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/puran_t4/183260353_paciente.pdf
+  sha256: 07807a19cc89bc0a63727a2384e20711f75e2306aa7a802d8ff41f43b2d60cbf
+  tamanho_bytes: 449480
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/puran_t4/183260353_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: puran_t4
+  principio_ativo: levotiroxina_sodica
+  nome_produto: PURAN T4
+  tipo_bula: profissional
+  numero_registro: '183260353'
+  id_produto: 1329235
+  expediente: 0459776240
+  razao_social: SANOFI MEDLEY FARMACÊUTICA LTDA.
+  cnpj: '10588595001092'
+  numero_transacao: '3613102024'
+  data_documento: 2024-04-11T10:23:00.000-0300
+  numero_processo: '25351190236201998'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/puran_t4/183260353_profissional.pdf
+  sha256: b7f43bf313b57c789081359af026bbd5b72dc76136f1a4535e60622b93c76766
+  tamanho_bytes: 484424
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/renitec/100290031_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: renitec
+  principio_ativo: maleato_de_enalapril
+  nome_produto: RENITEC
+  tipo_bula: paciente
+  numero_registro: '100290031'
+  id_produto: 5510
+  expediente: '1454181257'
+  razao_social: ORGANON FARMACÊUTICA LTDA.
+  cnpj: '45987013000134'
+  numero_transacao: '15988042025'
+  data_documento: 2025-11-03T17:04:40.000-0200
+  numero_processo: '2500001472983'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/renitec/100290031_paciente.pdf
+  sha256: a9266471b4784248723945c6b5bf77a992ad6198979d4fa33ca2009ed05ac6af
+  tamanho_bytes: 568463
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/renitec/100290031_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: renitec
+  principio_ativo: maleato_de_enalapril
+  nome_produto: RENITEC
+  tipo_bula: profissional
+  numero_registro: '100290031'
+  id_produto: 5510
+  expediente: '1454181257'
+  razao_social: ORGANON FARMACÊUTICA LTDA.
+  cnpj: '45987013000134'
+  numero_transacao: '15988042025'
+  data_documento: 2025-11-03T17:04:40.000-0200
+  numero_processo: '2500001472983'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/renitec/100290031_profissional.pdf
+  sha256: 789188cb4ce649691d9d04af71de402ba29e03aa1667ce4a77c17a28e4c8c56e
+  tamanho_bytes: 593049
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/sinvastacor/100470270_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: sinvastacor
+  principio_ativo: sinvastatina
+  nome_produto: SINVASTACOR
+  tipo_bula: paciente
+  numero_registro: '100470270'
+  id_produto: 7407
+  expediente: 0638742269
+  razao_social: SANDOZ DO BRASIL INDÚSTRIA FARMACÊUTICA LTDA
+  cnpj: '61286647000116'
+  numero_transacao: '8546622026'
+  data_documento: 2026-06-29T12:55:34.000-0300
+  numero_processo: '253510062440020'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/sinvastacor/100470270_paciente.pdf
+  sha256: c78b443dadc4fd3aed30faf71bcfa081d8e578fe35812f7952831f8a82d095eb
+  tamanho_bytes: 180545
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/sinvastacor/100470270_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: sinvastacor
+  principio_ativo: sinvastatina
+  nome_produto: SINVASTACOR
+  tipo_bula: profissional
+  numero_registro: '100470270'
+  id_produto: 7407
+  expediente: 0638742269
+  razao_social: SANDOZ DO BRASIL INDÚSTRIA FARMACÊUTICA LTDA
+  cnpj: '61286647000116'
+  numero_transacao: '8546622026'
+  data_documento: 2026-06-29T12:55:34.000-0300
+  numero_processo: '253510062440020'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/sinvastacor/100470270_profissional.pdf
+  sha256: add1d483ab9da712c550ee0bb6a4fcd604b529397cdf40e4a02d952513f22efb
+  tamanho_bytes: 264265
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/sinvastatina/167730576_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: sinvastatina
+  principio_ativo: sinvastatina
+  nome_produto: sinvastatina
+  tipo_bula: paciente
+  numero_registro: '167730576'
+  id_produto: 1228525
+  expediente: 0548823251
+  razao_social: LEGRAND PHARMA INDÚSTRIA FARMACÊUTICA LTDA
+  cnpj: 05044984000126
+  numero_transacao: '5055152025'
+  data_documento: 2025-04-23T17:19:49.000-0300
+  numero_processo: '25351674052201714'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/sinvastatina/167730576_paciente.pdf
+  sha256: 297be96127f4f7305a7695a5f872d7eaabecbbc08a930ed40cbbbd959952f58d
+  tamanho_bytes: 364926
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/sofosbuvir/115240005_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: sofosbuvir
+  principio_ativo: sofosbuvir
+  nome_produto: SOFOSBUVIR
+  tipo_bula: paciente
+  numero_registro: '115240005'
+  id_produto: 1180077
+  expediente: '4553205211'
+  razao_social: BLANVER FARMOQUIMICA E FARMACEUTICA S.A.
+  cnpj: '53359824000119'
+  numero_transacao: '10549482021'
+  data_documento: 2021-11-17T13:59:26.000-0200
+  numero_processo: '25351375607201784'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/sofosbuvir/115240005_paciente.pdf
+  sha256: d2b788b7a9057e07bc349d09b21d37142c62869f0734f95266eeed62b34fa4f6
+  tamanho_bytes: 240561
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/sofosbuvir/115240005_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: sofosbuvir
+  principio_ativo: sofosbuvir
+  nome_produto: SOFOSBUVIR
+  tipo_bula: profissional
+  numero_registro: '115240005'
+  id_produto: 1180077
+  expediente: '4553205211'
+  razao_social: BLANVER FARMOQUIMICA E FARMACEUTICA S.A.
+  cnpj: '53359824000119'
+  numero_transacao: '10549482021'
+  data_documento: 2021-11-17T13:59:26.000-0200
+  numero_processo: '25351375607201784'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/sofosbuvir/115240005_profissional.pdf
+  sha256: 11e1cbe75e146ac8bbb68330ff8017a254ae078c19fd63783aa92bc133838770
+  tamanho_bytes: 420682
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/sulfato_de_salbutamol/110130291_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: sulfato_de_salbutamol
+  principio_ativo: sulfato_de_salbutamol
+  nome_produto: sulfato de salbutamol
+  tipo_bula: paciente
+  numero_registro: '110130291'
+  id_produto: 1321685
+  expediente: '1530195250'
+  razao_social: GLENMARK FARMACÊUTICA LTDA
+  cnpj: '44363661000157'
+  numero_transacao: '17037442025'
+  data_documento: 2025-11-25T14:58:40.000-0200
+  numero_processo: '25351259374201907'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/sulfato_de_salbutamol/110130291_paciente.pdf
+  sha256: 57a5b378426de37f56aff9e7705a6e42aac12fe052425bd888dd40955bd796b0
+  tamanho_bytes: 147867
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/sulfato_de_salbutamol/110130291_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: sulfato_de_salbutamol
+  principio_ativo: sulfato_de_salbutamol
+  nome_produto: sulfato de salbutamol
+  tipo_bula: profissional
+  numero_registro: '110130291'
+  id_produto: 1321685
+  expediente: '1530195250'
+  razao_social: GLENMARK FARMACÊUTICA LTDA
+  cnpj: '44363661000157'
+  numero_transacao: '17037442025'
+  data_documento: 2025-11-25T14:58:40.000-0200
+  numero_processo: '25351259374201907'
+  data_atualizacao: 2026-09-23T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/sulfato_de_salbutamol/110130291_profissional.pdf
+  sha256: 744606b0935c7c2fa20a46a0ef2396cc1f75db882cadb8f83174c353ca175c17
+  tamanho_bytes: 173860
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/tylenol/157211214_paciente.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: tylenol
+  principio_ativo: paracetamol
+  nome_produto: TYLENOL
+  tipo_bula: paciente
+  numero_registro: '157211214'
+  id_produto: 3652639
+  expediente: 0461586240
+  razao_social: KENVUE LTDA.
+  cnpj: '59748988000114'
+  numero_transacao: '3636372024'
+  data_documento: 2024-04-11T15:26:12.000-0300
+  numero_processo: '25351464826202349'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/tylenol/157211214_paciente.pdf
+  sha256: b19f22013399426b256ff1df083d3c56aeeccc261b06b8df04911713a67d6508
+  tamanho_bytes: 391838
+  content_type: application/pdf
+- scenario_id: bulas-medicamentos-anvisa
+  manifest_version: '2026-10-07'
+  description: Bulas de medicamentos previamente baixadas do Bulário Eletrônico da
+    ANVISA
+  base_id: bulas_anvisa
+  tipo_documento: bula
+  natureza: estruturada
+  fonte: ANVISA - Bulário Eletrônico
+  acesso:
+    tipo: local_pdf
+    caminho: BULAS_dir/tylenol/157211214_profissional.pdf
+  selecao_deterministica: true
+  formato: pdf
+  sensitivity_default: publico
+  campo_vigencia: data_documento
+  chunking_sugerido: Split por seção da bula, com overlap
+  medicamento: tylenol
+  principio_ativo: paracetamol
+  nome_produto: TYLENOL
+  tipo_bula: profissional
+  numero_registro: '157211214'
+  id_produto: 3652639
+  expediente: 0461586240
+  razao_social: KENVUE LTDA.
+  cnpj: '59748988000114'
+  numero_transacao: '3636372024'
+  data_documento: 2024-04-11T15:26:12.000-0300
+  numero_processo: '25351464826202349'
+  data_atualizacao: 2026-09-24T00:00:00.000-0300
+  arquivo_pdf: BULAS_dir/tylenol/157211214_profissional.pdf
+  sha256: b7fea4efa6c3591ab0cb2a23ef3f828a175e552544a2e2daf531cfd578899fae
+  tamanho_bytes: 475115
+  content_type: application/pdf
+falhas: []

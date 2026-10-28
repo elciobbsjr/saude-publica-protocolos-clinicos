@@ -1,0 +1,64 @@
+scenario_id: rename-medicamentos-essenciais
+version: '2026-09-28'
+description: Relacao Nacional de Medicamentos Essenciais (RENAME) 2024 - Ministerio
+  da Saude
+bases:
+- base_id: rename_medicamentos
+  natureza: estruturada
+  fonte: Ministerio da Saude - RENAME 2024
+  acesso:
+    tipo: http_pdf
+    urls:
+    - https://cdn.who.int/media/docs/default-source/essential-medicines/national-essential-medicines-lists-(neml)/paho_neml/brasil-neml-2024.pdf?sfvrsn=8af0afb7_1&download=true
+  selecao_deterministica: true
+  volume_alvo: 1 documento (edicao consolidada RENAME 2024)
+  formato: pdf
+  licenca: Dados abertos gov.br - atribuicao
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: 1 medicamento/apresentacao = 1 chunk tabular serializado a partir
+    do PDF consolidado
+  metadados_extras: &id001
+  - versao_edicao
+  - versao_portaria
+  - status
+  - data_inicio
+  - data_fim
+generated_by: paula_femina.gerar_corpus_manifest_rename
+generated_at: '2026-09-24T14:00:52Z'
+documentos:
+- scenario_id: rename-medicamentos-essenciais
+  manifest_version: '2026-09-28'
+  description: Relacao Nacional de Medicamentos Essenciais (RENAME) 2024 - Ministerio
+    da Saude
+  base_id: rename_medicamentos
+  natureza: estruturada
+  fonte: Ministerio da Saude - RENAME 2024
+  acesso:
+    tipo: http_pdf
+    url_origem: http://bvsms.saude.gov.br/bvs/publicacoes/relacao_nacional_medicamentos_2024.pdf
+    url_pdf_resolvida: https://cdn.who.int/media/docs/default-source/essential-medicines/national-essential-medicines-lists-(neml)/paho_neml/brasil-neml-2024.pdf?sfvrsn=8af0afb7_1&download=true
+  selecao_deterministica: true
+  volume_alvo: 1 documento (edicao consolidada RENAME 2024)
+  formato: pdf
+  licenca: Dados abertos gov.br - atribuicao
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: 1 medicamento/apresentacao = 1 chunk tabular serializado a partir
+    do PDF consolidado
+  metadados_extras: *id001
+  versao_edicao: RENAME 2024
+  versao_portaria: Portaria GM/MS no 6.324, de 26/12/2024
+  data_inicio: '2024-12-26'
+  data_fim: null
+  status: vigente
+  confirmacao: explicita (ficha catalografica do proprio PDF cita a Portaria)
+  observacao: Link oficial (bvsms.saude.gov.br) retornou erro 503 persistente em testes
+    de 21-24/09/2026. Usado espelho hospedado pela OMS/OPAS (cdn.who.int), mesmo conteudo,
+    verificado por hash SHA-256. O painel 'Rename em Tempo Real' NAO foi usado como
+    fonte, pois muda de conteudo e quebraria selecao_deterministica.
+  arquivo_pdf: RENAME_dir/rename_2024.pdf
+  sha256: b1b0d582cb68fc96fcbe04fd65c1c697d5206b7dce8886f1c6ddb06374fd5201
+  tamanho_bytes: 2576541
+  content_type: application/pdf
+falhas: []

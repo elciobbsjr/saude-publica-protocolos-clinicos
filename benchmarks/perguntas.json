@@ -1,0 +1,20 @@
+﻿[
+  {
+    "id": "AIJ-001",
+    "doenca": "Artrite idiopática juvenil",
+    "pergunta": "Quais são os critérios para iniciar o tratamento com abatacepte?",
+    "categoria": "criterios_inclusao"
+  },
+  {
+    "id": "AIJ-002",
+    "doenca": "Artrite idiopática juvenil",
+    "pergunta": "Quais são os critérios gerais de inclusão no PCDT?",
+    "categoria": "criterios_inclusao"
+  },
+  {
+    "id": "AR-001",
+    "doenca": "Artrite reumatoide",
+    "pergunta": "Quais são os critérios de inclusão no PCDT vigente?",
+    "categoria": "criterios_inclusao"
+  }
+]

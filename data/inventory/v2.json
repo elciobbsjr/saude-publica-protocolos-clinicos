@@ -1,0 +1,468 @@
+{
+  "scenario_id": "corpus-saude-rag",
+  "version": "v2",
+  "coletado_em": "2026-09-22T17:55:34Z",
+  "manifest_hash": "sha256:ce7e780e8005211e4f8842bf98fe9e868a37cce6e9b7ba1ea13f83a601002a6f",
+  "totais": {
+    "arquivos": 43,
+    "bytes": 56512108,
+    "falhas": 0
+  },
+  "por_base": [
+    {
+      "base_id": "bulas_anvisa",
+      "natureza": "regulatoria",
+      "arquivos": 17,
+      "formatos": {
+        "pdf": 17
+      },
+      "bytes": 9617550,
+      "volume_alvo": "todos os PDFs de bula disponíveis localmente",
+      "divergencia_alvo": null
+    },
+    {
+      "base_id": "protocolos_conitec",
+      "natureza": "normativa",
+      "arquivos": 26,
+      "formatos": {
+        "pdf": 26
+      },
+      "bytes": 46894558,
+      "volume_alvo": "todos os documentos com fonte verificável",
+      "divergencia_alvo": null
+    }
+  ],
+  "arquivos": [
+    {
+      "path": "data/raw/v2/bulas/budesonida/102351180_paciente.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 291291,
+      "sha256": "ba89f1e056bd2b6c8ae49276990c3625a94baa713d10e7433cfab96af6ae9890",
+      "origem": "BULAS_dir/budesonida/102351180_paciente.pdf",
+      "coletado_em": "2026-09-22T17:55:27Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/cloridrato_de_metformina/103920215_paciente.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 426956,
+      "sha256": "a56d836079ae091919cfda752d41d7d2613c47184619e0e59103d466d5ad7635",
+      "origem": "BULAS_dir/cloridrato_de_metformina/103920215_paciente.pdf",
+      "coletado_em": "2026-09-22T17:55:28Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/cloridrato_de_metformina/103920215_profissional.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 573635,
+      "sha256": "6bef265058dd400a03af2f502c329422891481c51ef3d1cd55ce26b3b9a8f913",
+      "origem": "BULAS_dir/cloridrato_de_metformina/103920215_profissional.pdf",
+      "coletado_em": "2026-09-22T17:55:28Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/dolutegravir_sódico/101830154_paciente.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 391050,
+      "sha256": "c9de29bc75392310cd68bac27721f0315568c46503813b8b588edaa074d86c9a",
+      "origem": "BULAS_dir/dolutegravir_sódico/101830154_paciente.pdf",
+      "coletado_em": "2026-09-22T17:55:29Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/dolutegravir_sódico/101830154_profissional.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 798234,
+      "sha256": "64e38063f06de586ca66838da1e2a719cdf7ce965f4ce606344ac9afbd0c46da",
+      "origem": "BULAS_dir/dolutegravir_sódico/101830154_profissional.pdf",
+      "coletado_em": "2026-09-22T17:55:29Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/entecavir/112090141_profissional.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 738925,
+      "sha256": "9469bd666440f62c965275a3fc93ca653263148dd246304a175a47c4e5725819",
+      "origem": "BULAS_dir/entecavir/112090141_profissional.pdf",
+      "coletado_em": "2026-09-22T17:55:30Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/fumarato_de_tenofovir_desoproxila/112090136_paciente.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 181548,
+      "sha256": "24e898b2a2807415b47d32bb9abf79b182f19823580aab0ff7e82e623f3f7044",
+      "origem": "BULAS_dir/fumarato_de_tenofovir_desoproxila/112090136_paciente.pdf",
+      "coletado_em": "2026-09-22T17:55:30Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/fumarato_de_tenofovir_desoproxila/112090136_profissional.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 1252901,
+      "sha256": "88e0e11e9c9f0c0772fb99fdd33775bf357f4e9daba10f2392bb1824fab82e5d",
+      "origem": "BULAS_dir/fumarato_de_tenofovir_desoproxila/112090136_profissional.pdf",
+      "coletado_em": "2026-09-22T17:55:31Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/hidroclorotiazida/110390200_profissional.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 183430,
+      "sha256": "9400e47ceb45dc91d4d7db9d89b46d87529ffe18a4aa4fdceb475cb7753067c4",
+      "origem": "BULAS_dir/hidroclorotiazida/110390200_profissional.pdf",
+      "coletado_em": "2026-09-22T17:55:31Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/losartana_potássica/183260155_paciente.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 395866,
+      "sha256": "29fb467993feaf9496da1f92f0e2b347a412d87807c0ee77dd23a2e4a1c0b978",
+      "origem": "BULAS_dir/losartana_potássica/183260155_paciente.pdf",
+      "coletado_em": "2026-09-22T17:55:31Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/losartana_potássica/183260155_profissional.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 612017,
+      "sha256": "02e7d466270e27860c96d1ba4750caccad7b7c4b856aa1766e2e746ce2a1b77f",
+      "origem": "BULAS_dir/losartana_potássica/183260155_profissional.pdf",
+      "coletado_em": "2026-09-22T17:55:31Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/maleato_de_enalapril/103920177_profissional.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 413491,
+      "sha256": "a3e10abdbceadcfd8f6de0e8ec1c804a088ac210a64689b2572d35c2c9309b71",
+      "origem": "BULAS_dir/maleato_de_enalapril/103920177_profissional.pdf",
+      "coletado_em": "2026-09-22T17:55:32Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/metotrexato/116370142_paciente.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 1174577,
+      "sha256": "fdf1839bd4a3484413cf53d12e12d9a1286bb88c9ec5a9edbeff5f7785e0dcb3",
+      "origem": "BULAS_dir/metotrexato/116370142_paciente.pdf",
+      "coletado_em": "2026-09-22T17:55:32Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/metotrexato/116370142_profissional.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 1051426,
+      "sha256": "9c8ee767767f2efed7d639f606891ccc8b8d2afde98493ff2f23e4f69727abfb",
+      "origem": "BULAS_dir/metotrexato/116370142_profissional.pdf",
+      "coletado_em": "2026-09-22T17:55:32Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/sinvastatina/118190226_profissional.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 604603,
+      "sha256": "419d7a0c6686b11ec22fb400ecda3af94308b2cff227b36622aa2830bbb7451b",
+      "origem": "BULAS_dir/sinvastatina/118190226_profissional.pdf",
+      "coletado_em": "2026-09-22T17:55:33Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/sofosbuvir/110390232_paciente.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 337845,
+      "sha256": "3523a3468bf001e0343f959af0fabe0db1ca8c5ca4c20aa3e9d99c2ddce0ddc3",
+      "origem": "BULAS_dir/sofosbuvir/110390232_paciente.pdf",
+      "coletado_em": "2026-09-22T17:55:34Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/bulas/sulfato_de_salbutamol/103700792_paciente.pdf",
+      "base_id": "bulas_anvisa",
+      "tipo": "pdf",
+      "bytes": 189755,
+      "sha256": "2ade216c20acdca3f52c1e80761bc2ae819236241f9e82d7dc5c089b098b7343",
+      "origem": "BULAS_dir/sulfato_de_salbutamol/103700792_paciente.pdf",
+      "coletado_em": "2026-09-22T17:55:34Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/artrite_idiopatica_juvenil/artrite_idiopatica_juvenil__2021-09-10__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 4026000,
+      "sha256": "cf0edbd769ced4dc7d376a67f5cec68707499341e4112eeb25cc6e75573d6fa2",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:12Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/artrite_idiopatica_juvenil/artrite_idiopatica_juvenil__2026-01-19__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 349607,
+      "sha256": "df35144460806b7d12148c060f0ae5e8bf9c40d160f7ce262fca95f07994dbb7",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2026/portaria-conjunta-saes-sctie-no-34-de-19-de-janeiro-de-2026/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:13Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/artrite_psoriasica/artrite_psoriasica__2018-11-05__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 448079,
+      "sha256": "d47e5b70b471fbc3a78c33a63616446206fe115b22690044d6e457bdab23a181",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2018/dou_05_11_18_portariasas-sctie_24_pcdt_artrite_psoriaca.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:18Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/artrite_psoriasica/artrite_psoriasica__2021-05-28__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1425450,
+      "sha256": "dc42ace46a77377b6709a48f2bdaea8141b00b534a1f5f7a73283b98b1f0797c",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/20210531_pcdt_min_artrite_psoriaca.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:20Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/artrite_psoriasica/artrite_psoriasica__2026-01-21__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 191790,
+      "sha256": "3f24767a30f0475b16cf15384f6c6f5cc435a61b3d00a30091d8828671ea0111",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2026/portaria-conjunta-saes-sctie-no-37-de-21-de-janeiro-de-2026/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:20Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/artrite_reumatoide/artrite_reumatoide__2021-09-10__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 4026000,
+      "sha256": "cf0edbd769ced4dc7d376a67f5cec68707499341e4112eeb25cc6e75573d6fa2",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:09Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/artrite_reumatoide/artrite_reumatoide__2026-01-19__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 195181,
+      "sha256": "e999f1832979c8f2740985a5d964324cb9d258e3827fb01f67a194030893461a",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2026/portaria-conjunta-saes-sctie-no-33-de-19-de-janeiro-de-2026/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:10Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/asma/asma__2021-08-24__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1265009,
+      "sha256": "2868294aaf92d34059c161a489b6f6c4eef39201f69486eccc205ce91931dc2a",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/portaria-conjunta-saes-sectics-no-32.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:54:57Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/asma/asma__2023-12-22__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1265009,
+      "sha256": "2868294aaf92d34059c161a489b6f6c4eef39201f69486eccc205ce91931dc2a",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/portaria-conjunta-saes-sectics-no-32.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:54:58Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/asma/asma__2026-03-24__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1648350,
+      "sha256": "0da0567191b63f32a689ee9cc8cc42a009719fb59cc3db52c10bf79f9cc603fb",
+      "origem": "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/@@download/file",
+      "coletado_em": "2026-09-22T17:54:59Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/diabete_melito_tipo_1/diabete_melito_tipo_1__2018-03-16__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1559401,
+      "sha256": "8248040a7833238322f14500fe74b2dfc907bf7352019a405adce8b6eb794034",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/relatorios/2018/relatorio_pcdt_dm_2018.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:02Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/diabete_melito_tipo_1/diabete_melito_tipo_1__2019-11-12__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1535339,
+      "sha256": "58f851eb0477a7f5e110ea97492a9f53688a6d86cf04d0e25c378fc2b6d9e204",
+      "origem": "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diabete-melito-tipo-1/@@download/file",
+      "coletado_em": "2026-09-22T17:55:03Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/diabete_melito_tipo_2/diabete_melito_tipo_2__2020-11-13__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 2985301,
+      "sha256": "96265de616c19718392e15efb81a093da332a03e9e6103176983d39e0f4d03c5",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/20201113_pcdt_diabete_melito_tipo_2_29_10_2020_final.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:05Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/diabete_melito_tipo_2/diabete_melito_tipo_2__2024-03-01__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 739418,
+      "sha256": "fbf42178cfe48586d4d945250d57d49f87b8032c26b4b1ffd77324ed1d503a8f",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/relatorios/2024/PORTARIASECTICSMSN7.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:06Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/diabete_melito_tipo_2/diabete_melito_tipo_2__2026-02-21__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1826727,
+      "sha256": "f90b782997a5f90842877c6526432cd382b596ad6cb7ad95da0a2fd776dfae09",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/2026/pcdt-diabete-melito-tipo-2/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:07Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/dislipidemia/dislipidemia__2013-02-27__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 73456,
+      "sha256": "3887b53117b8ba465ad7e582597e1fd975d4168977ea6721aaec44152e9dd5ca",
+      "origem": "https://www.saude.mt.gov.br/storage/old/files/0200-%5B8559-120413-SES-MT%5D.pdf",
+      "coletado_em": "2026-09-22T17:55:00Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/dislipidemia/dislipidemia__2019-07-30__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 500828,
+      "sha256": "70224304f3a7bc95fb65c36f76ade4b5de181fc216ad9dfbe58439ea3e2945cc",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt_dislipidemia.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:01Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/hepatite_b/hepatite_b__2016-12-09__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 2696744,
+      "sha256": "62e33d1af780157a34ed751f6e8950c9cfc92e2fea03359de5d5dbfc9bd26eb8",
+      "origem": "https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2016/hepatites-virais/pcdt_hepatite_b_270917.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:23Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/hepatite_b/hepatite_b__2023-05-18__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1750312,
+      "sha256": "f1bda489d0cfc95df1761e5bafad3cf4f3306c68d7733b951d9ce2f474636e7f",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/20230524_Relatrio_PCDTHepatiteB.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:24Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/hepatite_c/hepatite_c__2018-12-20__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 6046787,
+      "sha256": "f20ae173c0b27a45fd17510f10c42b77cc4b4d47e910c3e1cdab245e381da784",
+      "origem": "https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2017/hepatites-virais/pcdt_hepatite_c_06_2019_isbn.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:54:54Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/hepatite_c/hepatite_c__2026-07-20__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1724889,
+      "sha256": "ba92519a4de265dfc32fadb9898474699cea7c92695b3f0a111fe3b21345868a",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2026/portaria-sctiems-no-39-de-20-de-julho-de-2026/@@display-file/file",
+      "coletado_em": "2026-09-22T17:54:55Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/hipertensao_arterial_sistemica/hipertensao_arterial_sistemica__2025-07-23__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1646828,
+      "sha256": "1f39016a1f1df510b5221d1809a6ff40674d9bad6797bb68b7fc14094c85b608",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-hipertensao-arterial-sistemica.pdf/@@download/file",
+      "coletado_em": "2026-09-22T17:55:21Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/pep/pep__2021-08-26__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1088049,
+      "sha256": "60e13aa24498189e6ef5560e53483323355d6a3b60b9b80bd895d3879cfd2f94",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/20210827_pcdt_pep_final.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:26Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/pep/pep__2024-04-08__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1161538,
+      "sha256": "dee6e9cf754d676fbd15a7a684f310854dbe4a1bed755ef3933b5204a7b1b5fa",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/PCDTPEP.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:27Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/psoriase/psoriase__2019-09-06__revogado.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 5104645,
+      "sha256": "ccc4c3184ebd8d964d275cacedf26bbe27c5e21a953c24c70a952acdff5001ff",
+      "origem": "https://www.conass.org.br/wp-content/uploads/2025/09/ESTATUTO-25.10.2023.pdf",
+      "coletado_em": "2026-09-22T17:55:15Z",
+      "status": "ok"
+    },
+    {
+      "path": "data/raw/v2/protocolos/psoriase/psoriase__2021-10-14__vigente.pdf",
+      "base_id": "protocolos_conitec",
+      "tipo": "pdf",
+      "bytes": 1613821,
+      "sha256": "364f280ad6c8ddd1d40a223a6238d8b58aa8de90194e29a28b0e8c3bec1f0862",
+      "origem": "https://www.gov.br/conitec/pt-br/midias/protocolos/20211021_portaria_conjunta_pcdt_psoriase.pdf/@@display-file/file",
+      "coletado_em": "2026-09-22T17:55:16Z",
+      "status": "ok"
+    }
+  ],
+  "falhas": []
+}

@@ -1,0 +1,238 @@
+{
+  "hepatite_c": [
+    {
+      "versao_portaria": "Portaria SCTIE/MS nº 84, de 19/12/2018",
+      "data_inicio": "2018-12-20",
+      "data_fim": "2026-07-20",
+      "status": "revogado",
+      "confirmacao": "explícita (Art. 3º da Portaria 39/2026 cita revogação, com número do DOU)",
+      "fonte": "https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2017/hepatites-virais/pcdt_hepatite_c_06_2019_isbn.pdf/@@display-file/file",
+      "observacao": "Não presente no zip anexado; veio do JSON que o Silvio colou no chat. Arquivo que ele usou (CP68) era o relatório de consulta pública, não esta Portaria."
+    },
+    {
+      "versao_portaria": "Portaria SCTIE/MS nº 39, de 20/07/2026",
+      "data_inicio": "2026-07-20",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2026/portaria-sctiems-no-39-de-20-de-julho-de-2026/@@display-file/file"
+    }
+  ],
+
+  "asma": [
+    {
+      "versao_portaria": "Portaria Conjunta SAES/SECTICS/MS nº 32, de 20/12/2023",
+      "data_inicio": "2023-12-22",
+      "data_fim": "2026-03-24",
+      "status": "revogado",
+      "confirmacao": "explícita (Art. 4º da Portaria Conjunta SAES/SCTIE nº 43/2026 cita revogação, com número do DOU)",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2023/portaria-conjunta-saes-sectics-no-32-pcdt-asma.pdf/@@display-file/file",
+      "observacao": "Versão intermediária encontrada nesta revisão — não estava na base original nem no zip. Preenche a lacuna entre a Portaria 14/2021 e a 43/2026."
+    },
+    {
+      "versao_portaria": "Portaria Conjunta SAES/SCTIE/MS nº 43, de 24/03/2026",
+      "data_inicio": "2026-03-24",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita",
+      "fonte": "https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view"
+    }
+  ],
+
+  "dislipidemia": [
+    {
+      "versao_portaria": "Portaria nº 200/SAS/MS, de 25/02/2013",
+      "data_inicio": "2013-02-27",
+      "data_fim": "2019-07-30",
+      "status": "revogado",
+      "confirmacao": "explícita (Art. 5º da Portaria Conjunta nº 8/2019 cita revogação, com número do DOU)",
+      "fonte": "https://www.saude.mt.gov.br/storage/old/files/0200-%5B8559-120413-SES-MT%5D.pdf",
+      "observacao": "Não está no zip. Precisa ser buscado — é o par 'antigo' que falta."
+    },
+    {
+      "versao_portaria": "Portaria Conjunta SCTIE/SAES/MS nº 8, de 30/07/2019",
+      "data_inicio": "2019-07-30",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita (parecer jurídico de 2025 confirma que ainda não foi substituída, apenas 'em atualização')",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt_dislipidemia.pdf/@@display-file/file",
+      "observacao": "Os dois arquivos do zip (resumo 2019 e livro completo 2020) são esta MESMA Portaria, em dois formatos — não são duas versões diferentes."
+    }
+  ],
+
+  "diabete_melito_tipo_1": [
+    {
+      "versao_portaria": "Portaria Conjunta nº 8/SAS/SCTIE/MS, de 15/03/2018",
+      "data_inicio": "2018-03-16",
+      "data_fim": "2019-11-12",
+      "status": "revogado",
+      "confirmacao": "explícita (Art. 5º da Portaria Conjunta nº 17/2019 cita revogação, com número do DOU)",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/relatorios/2018/relatorio_pcdt_dm_2018.pdf/@@display-file/file",
+      "observacao": "Não está no zip. É o par 'antigo' que falta para fechar o Tipo 1."
+    },
+    {
+      "versao_portaria": "Portaria Conjunta SAES/SCTIE/MS nº 17, de 12/11/2019",
+      "data_inicio": "2019-11-12",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita (parecer jurídico de 2025 confirma que ainda não foi substituída, só 'em atualização')",
+      "fonte": "https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diabete-melito-tipo-1/@@download/file"
+    }
+  ],
+
+  "diabete_melito_tipo_2": [
+    {
+      "versao_portaria": "Portaria SECTICS/MS nº 7, de 28/02/2024",
+      "data_inicio": "2024-03-01",
+      "data_fim": "2026-02-21",
+      "status": "revogado",
+      "confirmacao": "explícita (Art. 3º da Portaria SCTIE/MS nº 13/2026 cita revogação, com número do DOU: publicada no DOU nº42, de 01/03/2024, Seção 1, pág.85)",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/relatorios/2024/PORTARIASECTICSMSN7.pdf"
+    },
+    {
+      "versao_portaria": "Portaria SCTIE/MS nº 13, de 21/02/2026",
+      "data_inicio": "2026-02-21",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/2026/pcdt-diabete-melito-tipo-2"
+    }
+  ],
+
+  "artrite_reumatoide": [
+    {
+      "versao_portaria": "Portaria Conjunta nº 16, de 03/09/2021 (aprovou Artrite Reumatoide e AIJ juntas)",
+      "data_inicio": "2021-09-10",
+      "data_fim": "2026-01-19",
+      "status": "revogado",
+      "confirmacao": "explícita (revogação confirmada no texto da Portaria 34/2026, referente à AIJ; presumo que valha também para a parte de Artrite Reumatoide)",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@display-file/file",
+      "observacao": "O zip tem os Relatórios de Recomendação nº 653/654 (pasta 'relatorios' do Conitec), que serviram de base para esta Portaria, mas não são a Portaria em si."
+    },
+    {
+      "versao_portaria": "Portaria Conjunta SAES/SCTIE nº 33, de 19/01/2026",
+      "data_inicio": "2026-01-19",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita (Art. 4º da própria Portaria 33/2026 cita revogação da nº 16/2021, com número do DOU — texto completo obtido depois, ver pasta Doenças-protocolos/artrite_reumatoide/)",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-reumatoide/@@display-file/file",
+      "observacao": "PCDT completo (Conitec). A versão anterior do corpus era só a página do Diário Oficial com a portaria, sem o protocolo."
+    }
+  ],
+
+  "artrite_idiopatica_juvenil": [
+    {
+      "versao_portaria": "Portaria Conjunta nº 16, de 03/09/2021 (aprovou Artrite Reumatoide e AIJ juntas)",
+      "data_inicio": "2021-09-10",
+      "data_fim": "2026-01-19",
+      "status": "revogado",
+      "confirmacao": "explícita (Art. 4º da Portaria Conjunta nº 34/2026 cita revogação, com número do DOU)",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@display-file/file",
+      "observacao": "O zip tem o Relatório de Recomendação nº 653 (pasta 'relatorios' do Conitec), que serviu de base para esta Portaria, mas não é a Portaria em si."
+    },
+    {
+      "versao_portaria": "Portaria Conjunta SAES/SCTIE nº 34, de 19/01/2026",
+      "data_inicio": "2026-01-19",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-idiopatica-juvenil/@@display-file/file",
+      "observacao": "PCDT completo (Conitec). A versão anterior do corpus era só a página do Diário Oficial com a portaria, sem o protocolo."
+    }
+  ],
+
+  "psoriase": [
+    {
+      "versao_portaria": "Portaria Conjunta nº 10/SAES/SCTIE/MS, de 06/09/2019",
+      "data_inicio": "2019-09-06",
+      "data_fim": "2021-10-14",
+      "status": "revogado",
+      "confirmacao": "explícita (Art. 5º da Portaria Conjunta nº 18/2021 cita revogação, com número do DOU)",
+      "fonte": "https://www.saude.mt.gov.br/storage/old/files/pcdt-de-psoriase-%5B641-070420-SES-MT%5D.pdf",
+      "observacao": "Não está no zip. É o par 'antigo' que falta."
+    },
+    {
+      "versao_portaria": "Portaria Conjunta nº 18, de 14/10/2021",
+      "data_inicio": "2021-10-14",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/20211021_portaria_conjunta_pcdt_psoriase.pdf"
+    }
+  ],
+
+  "artrite_psoriasica": [
+    {
+      "versao_portaria": "Portaria Conjunta nº 9, de 21/05/2021",
+      "data_inicio": "2021-05-28",
+      "data_fim": "2026-01-21",
+      "status": "revogado",
+      "confirmacao": "explícita (Art. 4º da Portaria Conjunta nº 37/2026 cita revogação, com número do DOU: publicada no DOU nº100, de 28/05/2021, Seção 1, pág.227)",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/20210531_pcdt_min_artrite_psoriaca.pdf",
+      "observacao": "Não está no zip."
+    },
+    {
+      "versao_portaria": "Portaria Conjunta SAES/SCTIE nº 37, de 21/01/2026",
+      "data_inicio": "2026-01-21",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-psoriasica",
+      "observacao": "arquivo do zip (PSORIASE/PCDT_Artrite Psoríasica_JANEIRO_2026.pdf) está na pasta PSORIASE por engano, é doença diferente; conteúdo conferido e bate com esta fonte gov.br."
+    }
+  ],
+
+  "hipertensao_arterial_sistemica": [
+    {
+      "versao_portaria": "Portaria SECTICS/MS nº 49, de 23/07/2025",
+      "data_inicio": "2025-07-23",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-hipertensao-arterial-sistemica.pdf/@@download/file",
+      "observacao": "Segundo notícia oficial (medicinasa.com.br) e parecer jurídico de 2025, esta é a PRIMEIRA versão oficial de PCDT de Hipertensão já publicada pelo Ministério da Saúde — não existe uma versão 'antiga' de fonte Conitec/gov.br para parear. O arquivo 'antigo' do zip (Resumo_Oficial_Antigo_Hipertensao_2020.pdf) é um resumo da diretriz das sociedades médicas (SBC/SBH/SBN), não um PCDT oficial do Ministério."
+    }
+  ],
+
+  "hepatite_b": [
+    {
+      "versao_portaria": "Portaria SCTIE/MS nº 43, de 07/12/2016 (livro republicado set/2017)",
+      "data_inicio": "2016-12-09",
+      "data_fim": "2023-05-18",
+      "status": "revogado",
+      "confirmacao": "explícita (Art. 3º da Portaria SECTICS/MS nº 25/2023 cita revogação, com número do DOU)",
+      "fonte": "https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2016/hepatites-virais/pcdt_hepatite_b_270917.pdf/@@display-file/file",
+      "observacao": "O link que o Silvio tinha para a 'antiga' de Hepatite B (PortariaConjunta-25_2018.pdf, do site antigo-conitec) estava incorreto: o conteúdo real desse arquivo é o PCDT de Espondilite Ancilosante (Portaria Conjunta nº 25/2018), uma doença completamente diferente. Foi substituído por este documento correto."
+    },
+    {
+      "versao_portaria": "Portaria SECTICS/MS nº 25, de 18/05/2023",
+      "data_inicio": "2023-05-18",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/20230524_Relatrio_PCDTHepatiteB.pdf/@@display-file/file (apesar do nome do arquivo, o conteúdo é a Portaria + Anexo, hospedado na pasta /protocolos/)",
+      "observacao": "Esta versão também revogou e unificou o PCDT de profilaxia pós-transplante hepático (Portaria SAS/MS nº 469/2002) e incorporou o tenofovir alafenamida (TAF)."
+    }
+  ],
+
+  "pep": [
+    {
+      "versao_portaria": "Portaria SCTIE/MS nº 54, de 24/08/2021",
+      "data_inicio": "2021-08-26",
+      "data_fim": "2024-04-08",
+      "status": "revogado",
+      "confirmacao": "explícita (Art. 3º da Portaria SECTICS/MS nº 14/2024 cita revogação, com número do DOU)",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/20210827_pcdt_pep_final.pdf/@@display-file/file",
+      "observacao": "Os dois links que o Silvio tinha para PEP apontavam para a MESMA versão vigente (2024) — um deles com '2021' só na URL, mas conteúdo de 2024. Não formavam par de verdade. Este documento é o par 'antigo' correto."
+    },
+    {
+      "versao_portaria": "Portaria SECTICS/MS nº 14, de 08/04/2024",
+      "data_inicio": "2024-04-08",
+      "data_fim": null,
+      "status": "vigente",
+      "confirmacao": "explícita",
+      "fonte": "https://www.gov.br/conitec/pt-br/midias/protocolos/PCDTPEP.pdf/@@display-file/file",
+      "observacao": "Principais mudanças vs. 2021: ampliação do dolutegravir 50mg para gestantes em qualquer idade gestacional, inclusão do dolutegravir 5mg dispersível para crianças a partir de 4 semanas/3kg, novo esquema de 2ª linha com darunavir+ritonavir."
+    }
+  ]
+}

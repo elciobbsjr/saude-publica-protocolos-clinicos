@@ -1,0 +1,45 @@
+# User-specific tools and personal settings (Safe to ignore)
+.idea
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionary.xml
+.idea/shelf/
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==============================================================================
+# Environment Variables & Secrets
+# ==============================================================================
+.env
+.env.*
+.venv
+.pypirc
+
+
+# ==============================================================================
+# PROJECT IGNORE FILES
+# ==============================================================================
+.data/raw/
+data/raw/
+
+BULAS_dir/
+/BULAS_dir/
+./BULAS_dir/
+RENAME_dir/*.pdf
+SIH_dir/
+
+
+# Ignora os arquivos e pastas dentro de data/processed/ (mas mantém a pasta)
+data/processed/*
+!data/processed/.gitkeep
+
+# Ignora toda a pasta output/ na raiz do projeto
+output/
+
+# Logs de execução e índices persistidos (enunciado, seção 2.6)
+logs/
+index/
+data/inventory/*_log.txt

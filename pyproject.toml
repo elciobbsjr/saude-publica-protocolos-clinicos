@@ -1,0 +1,25 @@
+[project]
+name = "saude-publica-protocolos-clinicos"
+version = "0.1.0"
+description = "Desafio RAG - Saúde Pública e Protocolos Clínicos"
+readme = "README.md"
+authors = [
+    { name = "Patricia Zan", email = "patricia.zan.oliveira@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "faiss-cpu>=1.15.1",
+    "openai>=3.13.0",
+    "pydantic>=2.13.5",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.3",
+    "pyyaml>=6.0.3",
+    "requests>=2.34.2",
+    "tzdata>=2025.2",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

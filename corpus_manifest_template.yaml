@@ -1,0 +1,20 @@
+scenario_id: protocolos-clinicos-saude
+version: "2026-09-28"
+description: "Protocolos Clínicos e Diretrizes Terapêuticas verificados"
+
+bases:
+  - base_id: protocolos_conitec
+    natureza: normativa
+    fonte: "CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas"
+    acesso:
+      tipo: http_pdf
+      urls:
+        - "<URL definida em protocolos_normativa.json>"
+    selecao_deterministica: true
+    volume_alvo: "todos os documentos com fonte verificável"
+    formato: pdf
+    licenca: "Domínio público"
+    sensitivity_default: publico
+    campo_vigencia: "data_inicio"
+    chunking_sugerido: "Split por seção do PCDT, com overlap"
+    metadados_extras: [doenca, versao_portaria, status, data_inicio, data_fim]

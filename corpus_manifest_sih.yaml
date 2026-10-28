@@ -1,0 +1,77 @@
+scenario_id: sih-agregados-internacoes
+version: '2026-10-07'
+description: Dados agregados de internações hospitalares do SIH/SUS em 2025, por região
+  e UF, em frases para o RAG
+bases:
+- base_id: sih_agregados
+  natureza: agregada
+  fonte: SIH/SUS - DATASUS / Ministério da Saúde (dados obtidos via PySUS)
+  acesso: &id001
+    tipo: local_jsonl
+    caminho: SIH_dir/corpus_sih_agregados_rag.jsonl
+  selecao_deterministica: true
+  volume_alvo: 1
+  formato: jsonl
+  licenca: Dados abertos DATASUS - atribuição
+  sensitivity_default: publico
+  campo_vigencia: periodo
+  chunking_sugerido: 1 linha do JSONL = 1 documento (frase já pronta, sem novo chunking)
+  metadados_extras: &id002
+  - doenca
+  - periodo
+  - granularidade_temporal
+  - nivel
+  - dimensao_geografica
+  - regiao_atendimento
+  - uf_atendimento
+  - internacoes
+  - obitos
+  - letalidade_percentual
+generated_by: paula_femina (manual, a partir do corpus enviado por Silvio Lima)
+generated_at: '2026-10-07T18:15:00Z'
+documentos:
+- scenario_id: sih-agregados-internacoes
+  manifest_version: '2026-10-07'
+  description: Dados agregados de internações hospitalares do SIH/SUS em 2025, por
+    região e UF, em frases para o RAG
+  base_id: sih_agregados
+  natureza: agregada
+  fonte: SIH/SUS - DATASUS / Ministério da Saúde (dados obtidos via PySUS)
+  acesso: *id001
+  selecao_deterministica: true
+  volume_alvo: 1
+  formato: jsonl
+  licenca: Dados abertos DATASUS - atribuição
+  sensitivity_default: publico
+  campo_vigencia: periodo
+  chunking_sugerido: 1 linha do JSONL = 1 documento (frase já pronta, sem novo chunking)
+  metadados_extras: *id002
+  periodo: '2025'
+  total_registros: 8317
+  doencas_disponiveis:
+  - artrite_idiopatica_juvenil
+  - artrite_psoriasica
+  - artrite_reumatoide
+  - asma
+  - diabete_melito_tipo_1
+  - diabete_melito_tipo_2
+  - dislipidemia
+  - hepatite_b
+  - hepatite_c
+  - hipertensao_arterial_sistemica
+  - psoriase
+  regioes:
+  - Centro-Oeste
+  - Nordeste
+  - Norte
+  - Sudeste
+  - Sul
+  observacao: Corpus gerado por Silvio Lima a partir de planilhas agregadas do SIH/SUS
+    (5 regiões) obtidas com PySUS. Cada linha do JSONL tem id, text e metadata. O
+    script de coleta PySUS e os zips regionais não estão versionados aqui. Embeddings
+    gerados à parte em ChromaDB (coleção sih_agregados, modelo sentence-transformers/all-MiniLM-L6-v2).
+  arquivo_origem: SIH_dir/corpus_sih_agregados_rag.jsonl
+  sha256: c5cb08ed1d15aad99c9aa4dcfe97d19cbd896b3ee714ba475a4da3bd144f384b
+  tamanho_bytes: 9309112
+  content_type: application/jsonl
+falhas: []

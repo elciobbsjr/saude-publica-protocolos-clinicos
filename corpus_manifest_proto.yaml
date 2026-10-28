@@ -1,0 +1,782 @@
+scenario_id: protocolos-clinicos-saude
+version: '2026-09-28'
+description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+bases:
+- base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    urls:
+    - <URL definida em protocolos_normativa.json>
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: &id001
+  - doenca
+  - versao_portaria
+  - status
+  - data_inicio
+  - data_fim
+generated_by: src.gerar_corpus_manifest
+generated_at: '2026-09-28T18:05:23Z'
+doencas_disponiveis:
+- hepatite_c
+- asma
+- dislipidemia
+- diabete_melito_tipo_1
+- diabete_melito_tipo_2
+- artrite_reumatoide
+- artrite_idiopatica_juvenil
+- psoriase
+- artrite_psoriasica
+- hipertensao_arterial_sistemica
+- hepatite_b
+- pep
+doencas_processadas:
+- hepatite_c
+- asma
+- dislipidemia
+- diabete_melito_tipo_1
+- diabete_melito_tipo_2
+- artrite_reumatoide
+- artrite_idiopatica_juvenil
+- psoriase
+- artrite_psoriasica
+- hipertensao_arterial_sistemica
+- hepatite_b
+- pep
+documentos:
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2017/hepatites-virais/pcdt_hepatite_c_06_2019_isbn.pdf/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2017/hepatites-virais/pcdt_hepatite_c_06_2019_isbn.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: hepatite_c
+  versao_portaria: Portaria SCTIE/MS nº 84, de 19/12/2018
+  data_inicio: '2018-12-20'
+  data_fim: '2026-07-20'
+  status: revogado
+  confirmacao: explícita (Art. 3º da Portaria 39/2026 cita revogação, com número do
+    DOU)
+  fonte_json: https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2017/hepatites-virais/pcdt_hepatite_c_06_2019_isbn.pdf/@@display-file/file
+  observacao: Não presente no zip anexado; veio do JSON que o Silvio colou no chat.
+    Arquivo que ele usou (CP68) era o relatório de consulta pública, não esta Portaria.
+  arquivo_pdf: PROTO_dir/hepatite_c/hepatite_c__2018-12-20__revogado.pdf
+  sha256: f20ae173c0b27a45fd17510f10c42b77cc4b4d47e910c3e1cdab245e381da784
+  tamanho_bytes: 6046787
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2026/portaria-sctiems-no-39-de-20-de-julho-de-2026/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2026/portaria-sctiems-no-39-de-20-de-julho-de-2026/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: hepatite_c
+  versao_portaria: Portaria SCTIE/MS nº 39, de 20/07/2026
+  data_inicio: '2026-07-20'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2026/portaria-sctiems-no-39-de-20-de-julho-de-2026/@@display-file/file
+  observacao: null
+  arquivo_pdf: PROTO_dir/hepatite_c/hepatite_c__2026-07-20__vigente.pdf
+  sha256: ba92519a4de265dfc32fadb9898474699cea7c92695b3f0a111fe3b21345868a
+  tamanho_bytes: 1724889
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2023/portaria-conjunta-saes-sectics-no-32-pcdt-asma.pdf/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2023/portaria-conjunta-saes-sectics-no-32-pcdt-asma.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: asma
+  versao_portaria: Portaria Conjunta SAES/SECTICS/MS nº 32, de 20/12/2023
+  data_inicio: '2023-12-22'
+  data_fim: '2026-03-24'
+  status: revogado
+  confirmacao: explícita (Art. 4º da Portaria Conjunta SAES/SCTIE nº 43/2026 cita
+    revogação, com número do DOU)
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2023/portaria-conjunta-saes-sectics-no-32-pcdt-asma.pdf/@@display-file/file
+  observacao: Versão intermediária encontrada nesta revisão — não estava na base original
+    nem no zip. Preenche a lacuna entre a Portaria 14/2021 e a 43/2026.
+  arquivo_pdf: PROTO_dir/asma/asma__2023-12-22__revogado.pdf
+  sha256: d6044fe7379c9307c2466487c0601c46b82de290c573300aac109414a2db34ad
+  tamanho_bytes: 2676097
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view
+    url_pdf_resolvida: https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/@@download/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: asma
+  versao_portaria: Portaria Conjunta SAES/SCTIE/MS nº 43, de 24/03/2026
+  data_inicio: '2026-03-24'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita
+  fonte_json: https://www.gov.br/saude/pt-br/assuntos/pcdt/a/asma/view
+  observacao: null
+  arquivo_pdf: PROTO_dir/asma/asma__2026-03-24__vigente.pdf
+  sha256: 0da0567191b63f32a689ee9cc8cc42a009719fb59cc3db52c10bf79f9cc603fb
+  tamanho_bytes: 1648350
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.saude.mt.gov.br/storage/old/files/0200-%5B8559-120413-SES-MT%5D.pdf
+    url_pdf_resolvida: https://www.saude.mt.gov.br/storage/old/files/0200-%5B8559-120413-SES-MT%5D.pdf
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: dislipidemia
+  versao_portaria: Portaria nº 200/SAS/MS, de 25/02/2013
+  data_inicio: '2013-02-27'
+  data_fim: '2019-07-30'
+  status: revogado
+  confirmacao: explícita (Art. 5º da Portaria Conjunta nº 8/2019 cita revogação, com
+    número do DOU)
+  fonte_json: https://www.saude.mt.gov.br/storage/old/files/0200-%5B8559-120413-SES-MT%5D.pdf
+  observacao: Não está no zip. Precisa ser buscado — é o par 'antigo' que falta.
+  arquivo_pdf: PROTO_dir/dislipidemia/dislipidemia__2013-02-27__revogado.pdf
+  sha256: 3887b53117b8ba465ad7e582597e1fd975d4168977ea6721aaec44152e9dd5ca
+  tamanho_bytes: 73456
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt_dislipidemia.pdf/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt_dislipidemia.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: dislipidemia
+  versao_portaria: Portaria Conjunta SCTIE/SAES/MS nº 8, de 30/07/2019
+  data_inicio: '2019-07-30'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita (parecer jurídico de 2025 confirma que ainda não foi substituída,
+    apenas 'em atualização')
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt_dislipidemia.pdf/@@display-file/file
+  observacao: Os dois arquivos do zip (resumo 2019 e livro completo 2020) são esta
+    MESMA Portaria, em dois formatos — não são duas versões diferentes.
+  arquivo_pdf: PROTO_dir/dislipidemia/dislipidemia__2019-07-30__vigente.pdf
+  sha256: 70224304f3a7bc95fb65c36f76ade4b5de181fc216ad9dfbe58439ea3e2945cc
+  tamanho_bytes: 500828
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/relatorios/2018/relatorio_pcdt_dm_2018.pdf/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/relatorios/2018/relatorio_pcdt_dm_2018.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: diabete_melito_tipo_1
+  versao_portaria: Portaria Conjunta nº 8/SAS/SCTIE/MS, de 15/03/2018
+  data_inicio: '2018-03-16'
+  data_fim: '2019-11-12'
+  status: revogado
+  confirmacao: explícita (Art. 5º da Portaria Conjunta nº 17/2019 cita revogação,
+    com número do DOU)
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/relatorios/2018/relatorio_pcdt_dm_2018.pdf/@@display-file/file
+  observacao: Não está no zip. É o par 'antigo' que falta para fechar o Tipo 1.
+  arquivo_pdf: PROTO_dir/diabete_melito_tipo_1/diabete_melito_tipo_1__2018-03-16__revogado.pdf
+  sha256: 8248040a7833238322f14500fe74b2dfc907bf7352019a405adce8b6eb794034
+  tamanho_bytes: 1559401
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diabete-melito-tipo-1/@@download/file
+    url_pdf_resolvida: https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diabete-melito-tipo-1/@@download/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: diabete_melito_tipo_1
+  versao_portaria: Portaria Conjunta SAES/SCTIE/MS nº 17, de 12/11/2019
+  data_inicio: '2019-11-12'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita (parecer jurídico de 2025 confirma que ainda não foi substituída,
+    só 'em atualização')
+  fonte_json: https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diabete-melito-tipo-1/@@download/file
+  observacao: null
+  arquivo_pdf: PROTO_dir/diabete_melito_tipo_1/diabete_melito_tipo_1__2019-11-12__vigente.pdf
+  sha256: 58f851eb0477a7f5e110ea97492a9f53688a6d86cf04d0e25c378fc2b6d9e204
+  tamanho_bytes: 1535339
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/relatorios/2024/PORTARIASECTICSMSN7.pdf
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/relatorios/2024/PORTARIASECTICSMSN7.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: diabete_melito_tipo_2
+  versao_portaria: Portaria SECTICS/MS nº 7, de 28/02/2024
+  data_inicio: '2024-03-01'
+  data_fim: '2026-02-21'
+  status: revogado
+  confirmacao: 'explícita (Art. 3º da Portaria SCTIE/MS nº 13/2026 cita revogação,
+    com número do DOU: publicada no DOU nº42, de 01/03/2024, Seção 1, pág.85)'
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/relatorios/2024/PORTARIASECTICSMSN7.pdf
+  observacao: null
+  arquivo_pdf: PROTO_dir/diabete_melito_tipo_2/diabete_melito_tipo_2__2024-03-01__revogado.pdf
+  sha256: fbf42178cfe48586d4d945250d57d49f87b8032c26b4b1ffd77324ed1d503a8f
+  tamanho_bytes: 739418
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/2026/pcdt-diabete-melito-tipo-2
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/2026/pcdt-diabete-melito-tipo-2/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: diabete_melito_tipo_2
+  versao_portaria: Portaria SCTIE/MS nº 13, de 21/02/2026
+  data_inicio: '2026-02-21'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/2026/pcdt-diabete-melito-tipo-2
+  observacao: null
+  arquivo_pdf: PROTO_dir/diabete_melito_tipo_2/diabete_melito_tipo_2__2026-02-21__vigente.pdf
+  sha256: f90b782997a5f90842877c6526432cd382b596ad6cb7ad95da0a2fd776dfae09
+  tamanho_bytes: 1826727
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: artrite_reumatoide
+  versao_portaria: Portaria Conjunta nº 16, de 03/09/2021 (aprovou Artrite Reumatoide
+    e AIJ juntas)
+  data_inicio: '2021-09-10'
+  data_fim: '2026-01-19'
+  status: revogado
+  confirmacao: explícita (revogação confirmada no texto da Portaria 34/2026, referente
+    à AIJ; presumo que valha também para a parte de Artrite Reumatoide)
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@display-file/file
+  observacao: O zip tem os Relatórios de Recomendação nº 653/654 (pasta 'relatorios'
+    do Conitec), que serviram de base para esta Portaria, mas não são a Portaria em
+    si.
+  arquivo_pdf: PROTO_dir/artrite_reumatoide/artrite_reumatoide__2021-09-10__revogado.pdf
+  sha256: cf0edbd769ced4dc7d376a67f5cec68707499341e4112eeb25cc6e75573d6fa2
+  tamanho_bytes: 4026000
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-reumatoide/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-reumatoide/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: artrite_reumatoide
+  versao_portaria: Portaria Conjunta SAES/SCTIE nº 33, de 19/01/2026
+  data_inicio: '2026-01-19'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita (Art. 4º da própria Portaria 33/2026 cita revogação da nº
+    16/2021, com número do DOU — texto completo obtido depois, ver pasta Doenças-protocolos/artrite_reumatoide/)
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-reumatoide/@@display-file/file
+  observacao: PCDT completo (Conitec). A versão anterior do corpus era só a página do Diário Oficial com a portaria, sem o protocolo.
+  arquivo_pdf: PROTO_dir/artrite_reumatoide/artrite_reumatoide__2026-01-19__vigente.pdf
+  sha256: 857824309b1a683f510e7f0ef176eb56d813dd07b75fd5c0bde18195f798fbaf
+  tamanho_bytes: 3181559
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: artrite_idiopatica_juvenil
+  versao_portaria: Portaria Conjunta nº 16, de 03/09/2021 (aprovou Artrite Reumatoide
+    e AIJ juntas)
+  data_inicio: '2021-09-10'
+  data_fim: '2026-01-19'
+  status: revogado
+  confirmacao: explícita (Art. 4º da Portaria Conjunta nº 34/2026 cita revogação,
+    com número do DOU)
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/20211112_portaria_conjunta_16_pcdt_ar.pdf/@@display-file/file
+  observacao: O zip tem o Relatório de Recomendação nº 653 (pasta 'relatorios' do
+    Conitec), que serviu de base para esta Portaria, mas não é a Portaria em si.
+  arquivo_pdf: PROTO_dir/artrite_idiopatica_juvenil/artrite_idiopatica_juvenil__2021-09-10__revogado.pdf
+  sha256: cf0edbd769ced4dc7d376a67f5cec68707499341e4112eeb25cc6e75573d6fa2
+  tamanho_bytes: 4026000
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-idiopatica-juvenil/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-idiopatica-juvenil/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: artrite_idiopatica_juvenil
+  versao_portaria: Portaria Conjunta SAES/SCTIE nº 34, de 19/01/2026
+  data_inicio: '2026-01-19'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-idiopatica-juvenil/@@display-file/file
+  observacao: PCDT completo (Conitec). A versão anterior do corpus era só a página do Diário Oficial com a portaria, sem o protocolo.
+  arquivo_pdf: PROTO_dir/artrite_idiopatica_juvenil/artrite_idiopatica_juvenil__2026-01-19__vigente.pdf
+  sha256: e5c6c39fe92f6ad4ace23cb93e30cbbe1f161288f0c3822134073cf0c4e0af45
+  tamanho_bytes: 1797510
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.saude.mt.gov.br/storage/old/files/pcdt-de-psoriase-%5B641-070420-SES-MT%5D.pdf
+    url_pdf_resolvida: https://www.saude.mt.gov.br/storage/old/files/pcdt-de-psoriase-%5B641-070420-SES-MT%5D.pdf
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: psoriase
+  versao_portaria: Portaria Conjunta nº 10/SAES/SCTIE/MS, de 06/09/2019
+  data_inicio: '2019-09-06'
+  data_fim: '2021-10-14'
+  status: revogado
+  confirmacao: explícita (Art. 5º da Portaria Conjunta nº 18/2021 cita revogação,
+    com número do DOU)
+  fonte_json: https://www.saude.mt.gov.br/storage/old/files/pcdt-de-psoriase-%5B641-070420-SES-MT%5D.pdf
+  observacao: Não está no zip. É o par 'antigo' que falta.
+  arquivo_pdf: PROTO_dir/psoriase/psoriase__2019-09-06__revogado.pdf
+  sha256: 6b390f105a10cadd5f51693705afbd6311ad513352c48a3798bbb583a6f7bc74
+  tamanho_bytes: 966885
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/20211021_portaria_conjunta_pcdt_psoriase.pdf
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/20211021_portaria_conjunta_pcdt_psoriase.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: psoriase
+  versao_portaria: Portaria Conjunta nº 18, de 14/10/2021
+  data_inicio: '2021-10-14'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/20211021_portaria_conjunta_pcdt_psoriase.pdf
+  observacao: null
+  arquivo_pdf: PROTO_dir/psoriase/psoriase__2021-10-14__vigente.pdf
+  sha256: 364f280ad6c8ddd1d40a223a6238d8b58aa8de90194e29a28b0e8c3bec1f0862
+  tamanho_bytes: 1613821
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/20210531_pcdt_min_artrite_psoriaca.pdf
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/20210531_pcdt_min_artrite_psoriaca.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: artrite_psoriasica
+  versao_portaria: Portaria Conjunta nº 9, de 21/05/2021
+  data_inicio: '2021-05-28'
+  data_fim: '2026-01-21'
+  status: revogado
+  confirmacao: 'explícita (Art. 4º da Portaria Conjunta nº 37/2026 cita revogação,
+    com número do DOU: publicada no DOU nº100, de 28/05/2021, Seção 1, pág.227)'
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/20210531_pcdt_min_artrite_psoriaca.pdf
+  observacao: Não está no zip.
+  arquivo_pdf: PROTO_dir/artrite_psoriasica/artrite_psoriasica__2021-05-28__revogado.pdf
+  sha256: dc42ace46a77377b6709a48f2bdaea8141b00b534a1f5f7a73283b98b1f0797c
+  tamanho_bytes: 1425450
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-psoriasica
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-psoriasica/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: artrite_psoriasica
+  versao_portaria: Portaria Conjunta SAES/SCTIE nº 37, de 21/01/2026
+  data_inicio: '2026-01-21'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-artrite-psoriasica
+  observacao: arquivo do zip (PSORIASE/PCDT_Artrite Psoríasica_JANEIRO_2026.pdf) está
+    na pasta PSORIASE por engano, é doença diferente; conteúdo conferido e bate com
+    esta fonte gov.br.
+  arquivo_pdf: PROTO_dir/artrite_psoriasica/artrite_psoriasica__2026-01-21__vigente.pdf
+  sha256: 39c903a0c05bd44e12d18a91409ed04882e59af9a051d0e3b0d35d35b2aa7dfd
+  tamanho_bytes: 1294227
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-hipertensao-arterial-sistemica.pdf/@@download/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-hipertensao-arterial-sistemica.pdf/@@download/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: hipertensao_arterial_sistemica
+  versao_portaria: Portaria SECTICS/MS nº 49, de 23/07/2025
+  data_inicio: '2025-07-23'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-hipertensao-arterial-sistemica.pdf/@@download/file
+  observacao: Segundo notícia oficial (medicinasa.com.br) e parecer jurídico de 2025,
+    esta é a PRIMEIRA versão oficial de PCDT de Hipertensão já publicada pelo Ministério
+    da Saúde — não existe uma versão 'antiga' de fonte Conitec/gov.br para parear.
+    O arquivo 'antigo' do zip (Resumo_Oficial_Antigo_Hipertensao_2020.pdf) é um resumo
+    da diretriz das sociedades médicas (SBC/SBH/SBN), não um PCDT oficial do Ministério.
+  arquivo_pdf: PROTO_dir/hipertensao_arterial_sistemica/hipertensao_arterial_sistemica__2025-07-23__vigente.pdf
+  sha256: 1f39016a1f1df510b5221d1809a6ff40674d9bad6797bb68b7fc14094c85b608
+  tamanho_bytes: 1646828
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2016/hepatites-virais/pcdt_hepatite_b_270917.pdf/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2016/hepatites-virais/pcdt_hepatite_b_270917.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: hepatite_b
+  versao_portaria: Portaria SCTIE/MS nº 43, de 07/12/2016 (livro republicado set/2017)
+  data_inicio: '2016-12-09'
+  data_fim: '2023-05-18'
+  status: revogado
+  confirmacao: explícita (Art. 3º da Portaria SECTICS/MS nº 25/2023 cita revogação,
+    com número do DOU)
+  fonte_json: https://www.gov.br/aids/pt-br/central-de-conteudo/pcdts/2016/hepatites-virais/pcdt_hepatite_b_270917.pdf/@@display-file/file
+  observacao: 'O link que o Silvio tinha para a ''antiga'' de Hepatite B (PortariaConjunta-25_2018.pdf,
+    do site antigo-conitec) estava incorreto: o conteúdo real desse arquivo é o PCDT
+    de Espondilite Ancilosante (Portaria Conjunta nº 25/2018), uma doença completamente
+    diferente. Foi substituído por este documento correto.'
+  arquivo_pdf: PROTO_dir/hepatite_b/hepatite_b__2016-12-09__revogado.pdf
+  sha256: 62e33d1af780157a34ed751f6e8950c9cfc92e2fea03359de5d5dbfc9bd26eb8
+  tamanho_bytes: 2696744
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/20230524_Relatrio_PCDTHepatiteB.pdf/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/20230524_Relatrio_PCDTHepatiteB.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: hepatite_b
+  versao_portaria: Portaria SECTICS/MS nº 25, de 18/05/2023
+  data_inicio: '2023-05-18'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/20230524_Relatrio_PCDTHepatiteB.pdf/@@display-file/file
+    (apesar do nome do arquivo, o conteúdo é a Portaria + Anexo, hospedado na pasta
+    /protocolos/)
+  observacao: Esta versão também revogou e unificou o PCDT de profilaxia pós-transplante
+    hepático (Portaria SAS/MS nº 469/2002) e incorporou o tenofovir alafenamida (TAF).
+  arquivo_pdf: PROTO_dir/hepatite_b/hepatite_b__2023-05-18__vigente.pdf
+  sha256: f1bda489d0cfc95df1761e5bafad3cf4f3306c68d7733b951d9ce2f474636e7f
+  tamanho_bytes: 1750312
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/20210827_pcdt_pep_final.pdf/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/20210827_pcdt_pep_final.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: pep
+  versao_portaria: Portaria SCTIE/MS nº 54, de 24/08/2021
+  data_inicio: '2021-08-26'
+  data_fim: '2024-04-08'
+  status: revogado
+  confirmacao: explícita (Art. 3º da Portaria SECTICS/MS nº 14/2024 cita revogação,
+    com número do DOU)
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/20210827_pcdt_pep_final.pdf/@@display-file/file
+  observacao: Os dois links que o Silvio tinha para PEP apontavam para a MESMA versão
+    vigente (2024) — um deles com '2021' só na URL, mas conteúdo de 2024. Não formavam
+    par de verdade. Este documento é o par 'antigo' correto.
+  arquivo_pdf: PROTO_dir/pep/pep__2021-08-26__revogado.pdf
+  sha256: 60e13aa24498189e6ef5560e53483323355d6a3b60b9b80bd895d3879cfd2f94
+  tamanho_bytes: 1088049
+  content_type: application/pdf
+- scenario_id: protocolos-clinicos-saude
+  manifest_version: '2026-09-28'
+  description: Protocolos Clínicos e Diretrizes Terapêuticas verificados
+  base_id: protocolos_conitec
+  natureza: normativa
+  fonte: CONITEC - Protocolos Clínicos e Diretrizes Terapêuticas
+  acesso:
+    tipo: http_pdf
+    url_origem: https://www.gov.br/conitec/pt-br/midias/protocolos/PCDTPEP.pdf/@@display-file/file
+    url_pdf_resolvida: https://www.gov.br/conitec/pt-br/midias/protocolos/PCDTPEP.pdf/@@display-file/file
+  selecao_deterministica: true
+  volume_alvo: todos os documentos com fonte verificável
+  formato: pdf
+  licenca: Domínio público
+  sensitivity_default: publico
+  campo_vigencia: data_inicio
+  chunking_sugerido: Split por seção do PCDT, com overlap
+  metadados_extras: *id001
+  doenca: pep
+  versao_portaria: Portaria SECTICS/MS nº 14, de 08/04/2024
+  data_inicio: '2024-04-08'
+  data_fim: null
+  status: vigente
+  confirmacao: explícita
+  fonte_json: https://www.gov.br/conitec/pt-br/midias/protocolos/PCDTPEP.pdf/@@display-file/file
+  observacao: 'Principais mudanças vs. 2021: ampliação do dolutegravir 50mg para gestantes
+    em qualquer idade gestacional, inclusão do dolutegravir 5mg dispersível para crianças
+    a partir de 4 semanas/3kg, novo esquema de 2ª linha com darunavir+ritonavir.'
+  arquivo_pdf: PROTO_dir/pep/pep__2024-04-08__vigente.pdf
+  sha256: dee6e9cf754d676fbd15a7a684f310854dbe4a1bed755ef3933b5204a7b1b5fa
+  tamanho_bytes: 1161538
+  content_type: application/pdf
+falhas: []
