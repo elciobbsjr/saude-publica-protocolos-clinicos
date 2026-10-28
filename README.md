@@ -154,3 +154,12 @@ Projeto acadêmico coletivo **Time 02 — Saúde**. Integrantes informados no RE
 - Sueli da Hora
 
 Respeite a autoria coletiva, as permissões para divulgação dos documentos e o uso dos serviços externos. O projeto não traz licença de software explícita; nenhuma foi presumida.
+
+
+## 🎥 Demonstração do Sistema
+
+Confira o vídeo de apresentação do **RAG Clínico**, no qual demonstramos a arquitetura, os principais módulos do código e o funcionamento do sistema por meio de uma consulta real.
+
+▶️ **[Assistir à demonstração do RAG Clínico no YouTube](https://youtu.be/QAusXWDHVjM)**
+
+[![Demonstração do RAG Clínico](https://img.youtube.com/vi/QAusXWDHVjM/maxresdefault.jpg)](https://youtu.be/QAusXWDHVjM)

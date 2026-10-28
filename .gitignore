@@ -43,3 +43,6 @@ output/
 logs/
 index/
 data/inventory/*_log.txt
+
+/output/
+/output_chunking_*.zip
