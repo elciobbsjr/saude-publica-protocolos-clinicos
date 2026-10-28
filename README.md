@@ -4,6 +4,12 @@ Sistema experimental de consulta documental que utiliza **Retrieval-Augmented Ge
 
 > **Aviso:** ferramenta educacional e de apoio à consulta documental. **Não realiza diagnóstico, não prescreve medicamentos e não substitui profissionais de saúde.** Respostas produzidas por IA exigem conferência das fontes; a validação automática não garante correção clínica.
 
+## 🎥 Demonstração em vídeo
+
+Veja a apresentação da arquitetura, dos principais módulos e de uma consulta executada no sistema.
+
+▶️ **[Assistir à demonstração do RAG Clínico no YouTube](https://youtu.be/QAusXWDHVjM)**
+
 ## Objetivo
 
 Ajudar na localização e síntese de informações sobre protocolos clínicos, incluindo critérios documentais de inclusão, histórico de versões e evidências consultadas. O código organiza a coleta/manifestos, o processamento dos documentos, a recuperação de trechos relevantes, a geração de respostas e a observabilidade.
@@ -61,6 +67,27 @@ O módulo vetorial empregado na recuperação principal utiliza **similaridade d
 | `main.py` | Execução alternativa do pipeline pelo terminal. |
 | `tests/` e `benchmarks/` | Testes automatizados e perguntas de referência. |
 
+## 📦 Base documental v7 — download
+
+Os arquivos JSON processados (trechos documentais e embeddings) não estão incluídos no histórico do Git porque o pacote tem aproximadamente 137 MB. A **base v7 utilizada na demonstração** está publicada separadamente no GitHub Releases:
+
+- 📥 **[Baixar o ZIP da base documental v7](https://github.com/elciobbsjr/saude-publica-protocolos-clinicos/releases/download/v0.1-dados/output_chunking_19_102026.zip)**
+- 📦 [Ver o Release e os detalhes do pacote](https://github.com/elciobbsjr/saude-publica-protocolos-clinicos/releases/tag/v0.1-dados)
+
+O ZIP contém a pasta `output_chunking/v7/`. Extraia-o dentro da pasta `output/` do projeto, mantendo este caminho:
+
+```text
+saude-publica-protocolos-clinicos/
+└── output/
+    └── output_chunking/
+        └── v7/
+            ├── protocolos/
+            ├── bulas/
+            └── rename/
+```
+
+> **Versões:** a interface web carrega recursivamente os JSONs em `output/output_chunking/`, por isso funciona com a base v7. O inventário e o pipeline de preparação do projeto usam v8; a v7 não deve ser tratada como a versão documental mais recente nem misturada à v8 na mesma pasta de recuperação.
+
 ## Como executar localmente
 
 ### Pré-requisitos
@@ -70,35 +97,42 @@ O módulo vetorial empregado na recuperação principal utiliza **similaridade d
 - Acesso a um serviço de geração **compatível com a API da OpenAI**, com os modelos indicados no `config.py` ou equivalentes que estejam configurados.
 - **Corpus processado** com os JSONs dos chunks, e embeddings quando quiser usar a busca vetorial.
 
-Abra o terminal **na pasta raiz** do repositório. No PowerShell (Windows):
+Abra o PowerShell na **pasta raiz** do repositório e instale as dependências:
 
 ```powershell
 uv python install 3.14
 uv sync
-uv pip install -r requirements-interface.txt
-Copy-Item .env.example .env
+uv pip install streamlit
 ```
 
-Edite `.env` para informar o endpoint e os modelos **a que você realmente tem acesso**. O projeto originalmente aponta para um servidor externo compartilhado; sua disponibilidade **não é garantida**. Não coloque credenciais reais no GitHub.
+> O Streamlit é instalado separadamente porque não consta nas dependências do `pyproject.toml` atual. Os arquivos `requirements-interface.txt` e `.env.example` não estão presentes neste repositório; não é necessário executá-los.
 
-> O arquivo `uv.lock` foi mantido como recebido. O Streamlit não estava declarado no `pyproject.toml` original, portanto é instalado separadamente por `requirements-interface.txt`. Este procedimento não modifica o lockfile.
+### Baixar e preparar a base v7
 
-### Preparação dos documentos (etapa obrigatória para consultas reais)
+Para baixar o arquivo do Release e extraí-lo no local correto, execute no PowerShell:
 
-O ZIP original **não contém** `output/output_chunking/v8/`, nem o corpus Markdown completo em `data/processed/v8/`. Sem esses dados, a interface pode abrir, mas a recuperação de evidências não funcionará.
+```powershell
+Invoke-WebRequest -Uri "https://github.com/elciobbsjr/saude-publica-protocolos-clinicos/releases/download/v0.1-dados/output_chunking_19_102026.zip" -OutFile ".\\output_chunking_19_102026.zip"
+Expand-Archive -LiteralPath ".\\output_chunking_19_102026.zip" -DestinationPath ".\\output" -Force
+Test-Path ".\\output\\output_chunking\\v7"
+```
 
-**Opção A — mais fácil para a demonstração:** obtenha da equipe os **JSONs de chunks já processados** da versão `v8`, salve-os em `output/output_chunking/v8/` e confira se os documentos relevantes estão presentes.
+O último comando deverá retornar `True`. Quem já baixou o ZIP pode pular o `Invoke-WebRequest` e usar apenas o `Expand-Archive`.
 
-**Opção B — reconstruir o processamento:** a coleta usa o manifesto e cria os arquivos brutos e inventários; é necessário preparar os Markdown correspondentes em `data/processed/v8/` e então executar chunking e embeddings. **O ZIP não inclui uma rotina única de conversão em lote dos PDFs brutos para esses arquivos Markdown.**
+Se precisar utilizar outro servidor ou modelos de IA, configure as variáveis `OLLAMA_URL`, `GENERATION_MODEL` e `EMBEDDING_MODEL` por meio de um arquivo `.env` criado manualmente na raiz. **Atenção:** o módulo `src/generate.py` também define seus próprios valores de URL e modelo; ajuste-o para usar a nova configuração se trocar a infraestrutura. A disponibilidade do servidor originalmente usado pela equipe não é garantida. Nunca publique chaves ou credenciais.
+
+### Reconstruir o processamento v8 (opcional)
+
+O pipeline de chunking de v8 depende de arquivos Markdown preparados previamente em `data/processed/v8/`; esses documentos não estão no GitHub. Caso tenha os dados necessários para reconstruir o corpus, utilize:
 
 ```powershell
 uv run --no-sync python -m src.fetch_corpus fetch --manifest corpus_manifest.yaml
-# Após obter e preparar os Markdown de data/processed/v8/:
+# Após obter e preparar os Markdown em data/processed/v8/:
 uv run --no-sync python -m src.init.init_chunking
 uv run --no-sync python -m src.init.init_embeddings
 ```
 
-A preparação dos embeddings depende do modelo e do servidor configurados; confira metadados, licenças e vigência das fontes antes de usá-las.
+A geração de embeddings requer acesso ao servidor e ao modelo configurados. Não é necessário executar essas etapas para usar a base v7 já processada do Release.
 
 ### Iniciar a interface
 
@@ -111,10 +145,10 @@ Acesse a URL local exibida no terminal (em geral `http://localhost:8501`). Na pr
 ### Utilizar pelo terminal (opcional)
 
 ```powershell
-uv run --no-sync python main.py "Quais são os critérios do PCDT vigente para artrite reumatoide?" --llm
+uv run --no-sync python main.py "Quais são os critérios do PCDT vigente para artrite reumatoide?" --corpus output/output_chunking/v7 --llm
 ```
 
-O comando do terminal exige `output/output_chunking/v8/`. Sem `--llm`, o comando prepara a geração sem consultar o modelo de linguagem.
+O comando acima seleciona explicitamente a base v7; o padrão de `main.py` aponta para v8. Sem `--llm`, o comando prepara a geração sem consultar o modelo de linguagem.
 
 ### Executar os testes
 
@@ -126,12 +160,13 @@ Os módulos podem ser testados separadamente; os testes que dependem de integra�
 
 ## Demonstração sugerida
 
-1. Abra a interface e selecione **Artrite reumatoide** + **Vigente** + **Intermediária**.
-2. Selecione no benchmark **“Quais são os critérios de inclusão no PCDT vigente?”** e clique em **Executar consulta**.
-3. Mostre as abas **Resposta**, **Evidências** e **Observabilidade**. A apresentação dos resultados depende do corpus e do servidor de IA estarem disponíveis.
-4. Em uma nova consulta, digite **“Meu pai tem artrite reumatoide. Que remédio ele deve tomar?”** para demonstrar a recusa de orientação individualizada.
+1. Abra a interface e selecione **Artrite idiopática juvenil** + **Vigente** + **Intermediária**.
+2. Faça a pergunta **“Quais são os critérios de diagnóstico?”** e clique em **Executar consulta**.
+3. Apresente a resposta gerada e as abas **Evidências** e **Observabilidade**. Na demonstração realizada, foram recuperados 10 chunks.
+4. Explique que a **verificação documental automática pode ser inconclusiva**: as respostas são experimentais e precisam ser conferidas no protocolo oficial.
+5. Opcionalmente, teste uma solicitação de prescrição individualizada para demonstrar o mecanismo de recusa.
 
-O roteiro narrado, com marcações de tela para cinco minutos, está em [`ROTEIRO_VIDEO_5_MIN.md`](ROTEIRO_VIDEO_5_MIN.md). O passo a passo de publicação está em [`PUBLICAR_NO_GITHUB.md`](PUBLICAR_NO_GITHUB.md).
+O vídeo completo está disponível na [seção de demonstração](#-demonstração-em-vídeo).
 
 ## Limitações e cuidados
 
@@ -154,12 +189,3 @@ Projeto acadêmico coletivo **Time 02 — Saúde**. Integrantes informados no RE
 - Sueli da Hora
 
 Respeite a autoria coletiva, as permissões para divulgação dos documentos e o uso dos serviços externos. O projeto não traz licença de software explícita; nenhuma foi presumida.
-
-
-## 🎥 Demonstração do Sistema
-
-Confira o vídeo de apresentação do **RAG Clínico**, no qual demonstramos a arquitetura, os principais módulos do código e o funcionamento do sistema por meio de uma consulta real.
-
-▶️ **[Assistir à demonstração do RAG Clínico no YouTube](https://youtu.be/QAusXWDHVjM)**
-
-[![Demonstração do RAG Clínico](https://img.youtube.com/vi/QAusXWDHVjM/maxresdefault.jpg)](https://youtu.be/QAusXWDHVjM)
